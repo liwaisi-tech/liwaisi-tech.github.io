@@ -1,34 +1,57 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
+import { useState } from 'react'
+import { Menu, X } from 'lucide-react'
+import { motion, AnimatePresence } from 'framer-motion'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
+    <div className="hero-container">
+      <header className="navbar">
+        <div className="logo">
+          <img src="/src/assets/icons/Logo.png" alt="LIWAISI Logo" className="logo-img" />
+        </div>
+        <nav className="nav-desktop">
+          <a href="#about">About</a>
+          <a href="#programs">Programs</a>
+          <a href="#impact">Impact</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Open menu">
+          {menuOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+        <AnimatePresence>
+          {menuOpen && (
+            <motion.nav
+              className="nav-mobile"
+              initial={{ x: '100%' }}
+              animate={{ x: 0 }}
+              exit={{ x: '100%' }}
+              transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+            >
+              <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
+              <a href="#programs" onClick={() => setMenuOpen(false)}>Programs</a>
+              <a href="#impact" onClick={() => setMenuOpen(false)}>Impact</a>
+              <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
+            </motion.nav>
+          )}
+        </AnimatePresence>
+      </header>
+      <main className="hero-main">
+        <section className="hero-text">
+          <h1 className="hero-title">TECHNOLOGY<br/>WITH HEART</h1>
+          <p className="hero-description">
+            At LIWAISI, we believe the countryside doesn't need solutions brought from outside, but tools built with its people, its knowledge, and its reality.
+          </p>
+          <button className="hero-btn">GET STARTED</button>
+        </section>
+        <section className="hero-image">
+          {/* Aquí irá la imagen que el usuario proveerá */}
+          <img src="/ruta/a/tu/imagen.png" alt="Hero" className="main-hero-img" />
+        </section>
+      </main>
+    </div>
   )
 }
 
