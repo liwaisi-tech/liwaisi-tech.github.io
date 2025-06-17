@@ -10,7 +10,7 @@ function App() {
     <div className="hero-container">
       <header className="navbar">
         <div className="logo">
-          <img src="/src/assets/icons/Logo.png" alt="LIWAISI Logo" className="logo-img" />
+          <img src="/src/assets/icons/Logo.svg" alt="LIWAISI Logo" className="logo-img" />
         </div>
         <nav className="nav-desktop">
           <a href="#about">About</a>
