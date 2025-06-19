@@ -1,5 +1,5 @@
 import './App.css'
-import heroBg from './assets/images/Clases.png'
+import { IMAGES } from './config/images'
 import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { CommunitySection } from './components/CommunitySection'
@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="hero-container">
       <Navbar lang={lang} onLangChange={setLang} />
-      <Hero lang={lang} background={heroBg} />
+      <Hero lang={lang} background={IMAGES.HERO_BACKGROUND} />
       <CommunitySection lang={lang} />
       <PartnersSection lang={lang} />
       <Footer lang={lang} />

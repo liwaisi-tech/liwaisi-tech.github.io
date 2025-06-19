@@ -1,4 +1,5 @@
 import { texts } from '../assets/texts';
+import { IMAGES } from '../config/images';
 
 interface CommunitySectionProps {
   lang: 'es' | 'en';
@@ -12,10 +13,10 @@ export const CommunitySection = ({ lang }: CommunitySectionProps) => (
       <button className="community-btn">{texts[lang].community.button}</button>
     </div>
     <div className="community-gallery">
-      <img src="https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80" alt="Uva" />
-      <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80" alt="Naranjas" />
-      <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80" alt="Riego" />
-      <img src="https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80" alt="Nuez" />
+      <img src={IMAGES.COMMUNITY_UVA} alt="Uva" />
+      <img src={IMAGES.COMMUNITY_NARANJAS} alt="Naranjas" />
+      <img src={IMAGES.COMMUNITY_RIEGO} alt="Riego" />
+      <img src={IMAGES.COMMUNITY_NUEZ} alt="Nuez" />
     </div>
   </section>
 ); 
