@@ -10,7 +10,13 @@ export const CommunitySection = ({ lang }: CommunitySectionProps) => (
     <div className="community-content">
       <h2 className="community-title">{texts[lang].community.title}</h2>
       <p className="community-desc">{texts[lang].community.description}</p>
-      <button className="community-btn">{texts[lang].community.button}</button>
+      <a
+        href="https://www.youtube.com/@LiwaisiTech"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <button className="community-btn">{texts[lang].community.button}</button>
+      </a>
     </div>
     <div className="community-gallery">
       <img src={IMAGES.COMMUNITY_UVA} alt="Uva" />

@@ -1,5 +1,11 @@
 export const texts = {
   es: {
+    navbar: {
+      about: 'Sobre nosotros',
+      programs: 'Programas',
+      impact: 'Impacto',
+      contact: 'Contacto',
+    },
     hero: {
       title: 'TECNOLOGIA\nCON PROPOSITO',
       description: 'En LIWAISI, creemos que el campo no necesita soluciones impuestas, sino herramientas construidas con su gente, su conocimiento y su realidad.',
@@ -23,6 +29,12 @@ export const texts = {
     },
   },
   en: {
+    navbar: {
+      about: 'About',
+      programs: 'Programs',
+      impact: 'Impact',
+      contact: 'Contact',
+    },
     hero: {
       title: 'TECHNOLOGY\nWITH HEART',
       description: "At LIWAISI, we believe the countryside doesn't need solutions brought from outside, but tools built with its people, its knowledge, and its reality.",

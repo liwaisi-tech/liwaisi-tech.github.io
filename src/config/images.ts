@@ -1,13 +1,13 @@
 // Configuración de URLs de imágenes
 export const IMAGES = {
   // Hero Section
-  HERO_BACKGROUND: 'https://drive.google.com/thumbnail?id=1wJgEwQIiOChH_OXzSLamK2CAD_76GZq2&sz=w1920',
+  HERO_BACKGROUND: 'https://drive.google.com/thumbnail?id=1pGy1QA_Q5sOkBY-fC_rpzD4MAxeLv6b8&sz=w1920',
   
   // Community Section
-  COMMUNITY_UVA: 'https://images.unsplash.com/photo-1502741338009-cac2772e18bc?auto=format&fit=crop&w=400&q=80',
-  COMMUNITY_NARANJAS: 'https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=400&q=80',
-  COMMUNITY_RIEGO: 'https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80',
-  COMMUNITY_NUEZ: 'https://images.unsplash.com/photo-1506784983877-45594efa4cbe?auto=format&fit=crop&w=400&q=80',
+  COMMUNITY_UVA: 'https://drive.google.com/thumbnail?id=1oho2EgeUREOUtVVmVO6a-qYTWIvQBgzT&sz=w1200',
+  COMMUNITY_NARANJAS: 'https://drive.google.com/thumbnail?id=11iZIeGdbhtCQLJc9A-kbtdsMuvajBD_o&sz=w1200',
+  COMMUNITY_RIEGO: 'https://drive.google.com/thumbnail?id=12CTyadEn1ag3S7fGDl5CmNQWhuVLEpoQ&sz=w1200',
+  COMMUNITY_NUEZ: 'https://drive.google.com/thumbnail?id=1GYF92LlvSSukxUPVKvA4I6FcOU2oeaOm&sz=w1200',
   
   // Partners Section
   PARTNER_AGRONOMOS: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo-ingenieros-agronomos-chile.png',
