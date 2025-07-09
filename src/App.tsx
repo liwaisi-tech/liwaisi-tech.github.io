@@ -1,10 +1,10 @@
 import './App.css'
 import { IMAGES } from './config/images'
-import { Navbar } from './components/Navbar'
-import { Hero } from './components/Hero'
-import { CommunitySection } from './components/CommunitySection'
-import { PartnersSection } from './components/PartnersSection'
-import { Footer } from './components/Footer'
+import { Navbar } from "./components/Navbar/Navbar";
+import { Hero } from "./components/Hero/Hero";
+import { CommunitySection } from "./components/CommunitySection/CommunitySection";
+import { PartnersSection } from "./components/PartnersSection/PartnersSection";
+import { Footer } from "./components/Footer/Footer";
 import { Lang } from './types/Lang'
 import { useState } from 'react'
 

@@ -1,0 +1,137 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+  background: #fff;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 2.5rem;
+}
+.nav-desktop {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.navbar nav a {
+  margin-left: 2.5rem;
+  color: var(--color-verde-oscuro);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar nav a:hover {
+  color: var(--color-celeste);
+}
+.lang-selector {
+  margin-left: 1rem;
+  border-radius: 8px;
+  padding: 0.2rem 0.6rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: 1px solid #e0e0e0;
+  background: #fff;
+  color: #234077;
+  outline: none;
+  transition: border 0.2s;
+}
+.lang-selector:focus {
+  border: 1.5px solid #37c3d1;
+}
+.nav-hamburger {
+  display: block;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-verde-oscuro);
+  z-index: 101;
+  margin-left: auto;
+}
+@media (min-width: 901px) {
+  .nav-hamburger {
+    display: none;
+  }
+}
+.nav-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 80vw;
+  max-width: 320px;
+  background: var(--color-fondo);
+  box-shadow: -2px 0 16px rgba(16,48,53,0.10);
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2rem 2rem 2rem;
+  gap: 2rem;
+  z-index: 100;
+}
+.nav-mobile a {
+  color: var(--color-verde-oscuro);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.nav-mobile a:hover {
+  color: var(--color-celeste);
+}
+@media (max-width: 900px) {
+  .navbar {
+    justify-content: flex-start;
+    gap: 0.5rem;
+    padding: 0 1.2rem;
+  }
+  .logo {
+    margin-right: 0;
+  }
+  .nav-desktop {
+    display: none;
+  }
+  .lang-selector {
+    margin-left: 0.5rem;
+    margin-right: 0;
+    font-size: 1rem;
+    padding: 0.2rem 0.6rem;
+  }
+}
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+@media (max-width: 900px) {
+  .nav-actions {
+    gap: 0.3rem;
+    margin-left: auto;
+  }
+}
+.hide-mobile {
+  display: block;
+}
+@media (max-width: 900px) {
+  .hide-mobile {
+    display: none !important;
+  }
+}
+.logo-img {
+  height: 96px;
+  width: auto;
+  max-width: 320px;
+  display: block;
+}
+@media (max-width: 600px) {
+  .logo-img {
+    height: 72px;
+  }
+}

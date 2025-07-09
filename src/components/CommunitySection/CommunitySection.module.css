@@ -1,0 +1,160 @@
+.community-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 3rem;
+    padding: 3rem 2vw 3rem 6vw;
+    background: #fff;
+  }
+  
+  .community-content {
+    flex: 1 1 40%;
+    max-width: 520px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .community-title {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: #234077;
+    margin-bottom: 2rem;
+    line-height: 1.1;
+  }
+  
+  .community-desc {
+    color: #2d3748;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+  }
+  
+  .community-btn {
+    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    background: var(--color-celeste);
+    color: var(--color-verde-oscuro);
+    font-weight: bold;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 24px;
+    padding: 0.9rem 2.2rem;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(55,195,209,0.08);
+    transition: background 0.2s, color 0.2s;
+  }
+  
+  .community-btn:hover {
+    background: var(--color-verde-agua);
+    color: var(--color-negro);
+  }
+  
+  /* Nuevo contenedor para el slide */
+  .community-gallery {
+    position: relative;
+    width: 420px;
+    max-width: 100%;
+    height: 420px;
+    overflow: hidden;
+  }
+  
+  .slide-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 1rem;
+    width: 100%;
+    height: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  .slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    transition: transform 0.3s ease;
+  }
+  
+  .slide-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Indicadores de slide */
+  .slide-indicators {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 0.5rem;
+    z-index: 10;
+  }
+  
+  .indicator {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .indicator:hover {
+    background: rgba(255, 255, 255, 0.8);
+    transform: scale(1.1);
+  }
+  
+  .indicator-active {
+    background: #103035;
+    box-shadow: 0 0 0 2px rgba(16, 48, 53, 0.3);
+  }
+  
+  /* Animación de fade */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive */
+  @media (max-width: 1100px) {
+    .community-section {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 2rem 2vw;
+    }
+    
+    .community-gallery {
+      width: 100%;
+      height: 300px;
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 700px) {
+    .community-title {
+      font-size: 2rem;
+    }
+    
+    .community-gallery {
+      height: 250px;
+    }
+    
+    .slide-container {
+      gap: 0.5rem;
+    }
+    
+    .indicator {
+      width: 10px;
+      height: 10px;
+    }
+  }

@@ -1,8 +1,10 @@
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Lang } from '../types/Lang';
-import { texts } from '../assets/texts';
+import { texts } from '../../assets/texts';
+import { Lang } from '../../types/Lang';
+import { IMAGES } from '../../config/images';
+import styles from './Navbar.module.css';
 
 interface NavbarProps {
   lang: Lang;
@@ -15,22 +17,22 @@ export const Navbar = ({ lang, onLangChange }: NavbarProps) => {
   const langKey = typeof lang === 'string' ? lang : (lang === Lang.ES ? 'es' : 'en');
   const navTexts = texts[langKey].navbar;
   return (
-    <header className="navbar">
-      <div className="logo">
-        <img src="/src/assets/icons/Logo.svg" alt="LIWAISI Logo" className="logo-img" />
+    <header className={styles['navbar']}>
+      <div className={styles['logo']}>
+        <img src={IMAGES.LOGO} alt="LIWAISI Logo" className={styles['logo-img']} />
       </div>
-      <nav className="nav-desktop">
+      <nav className={styles['nav-desktop']}>
         <a href="#about">{navTexts.about}</a>
         <a href="#programs">{navTexts.programs}</a>
         <a href="#impact">{navTexts.impact}</a>
         <a href="#contact">{navTexts.contact}</a>
       </nav>
-      <div className="nav-actions">
-        <button className="nav-hamburger" onClick={() => setMenuOpen(!menuOpen)} aria-label="Open menu">
+      <div className={styles['nav-actions']}>
+        <button className={styles['nav-hamburger']} onClick={() => setMenuOpen(!menuOpen)} aria-label="Open menu">
           {menuOpen ? <X size={32} /> : <Menu size={32} />}
         </button>
         <select
-          className="lang-selector hide-mobile"
+          className={`${styles['lang-selector']} ${styles['hide-mobile']}`}
           value={lang}
           onChange={e => onLangChange(e.target.value as Lang)}
           aria-label="Seleccionar idioma"
@@ -42,7 +44,7 @@ export const Navbar = ({ lang, onLangChange }: NavbarProps) => {
       <AnimatePresence>
         {menuOpen && (
           <motion.nav
-            className="nav-mobile"
+            className={styles['nav-mobile']}
             initial={{ x: '100%' }}
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
