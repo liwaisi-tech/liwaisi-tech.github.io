@@ -45,7 +45,7 @@ export const CommunitySection = ({ lang }: CommunitySectionProps) => {
   };
 
   return (
-    <section className={styles['community-section']}>
+    <section id="community" className={styles['community-section']}>
       <div className={styles['community-content']}>
         <h2 className={styles['community-title']}>{texts[lang].community.title}</h2>
         <p className={styles['community-desc']}>{texts[lang].community.description}</p>

@@ -13,6 +13,7 @@ export const Hero = ({ lang }: HeroProps) => {
 
   return (
     <main
+      id="hero"
       className={styles['hero-main']}
       style={{
         background: `linear-gradient(rgba(16,48,53,0.7), rgba(16,48,53,0.7)), url(${background}) center center/cover no-repeat`

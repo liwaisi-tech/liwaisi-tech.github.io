@@ -1,7 +1,8 @@
 export const texts = {
   es: {
     navbar: {
-      about: 'Sobre nosotros',
+      about: 'Raíz y Propósito',
+      hero: 'Dona',
       programs: 'Programas',
       impact: 'Impacto',
       contact: 'Contacto',
@@ -20,6 +21,10 @@ export const texts = {
       title: 'Nuestros partners',
       button: 'Quiero ser partner',
     },
+    about: {
+      title: 'Raíz y Propósito',
+      description: 'Aquí nace todo lo que hacemos. Creemos en el poder de las comunidades rurales para transformar el futuro con tecnología, sostenibilidad y liderazgo. Esta es nuestra razón de ser y el origen de Liwaisi Tech.'
+    },
     footer: {
       follow: 'Sigue a Liwaisi',
       contact: 'Contacto',
@@ -31,6 +36,7 @@ export const texts = {
   en: {
     navbar: {
       about: 'About',
+      hero: 'Donate',
       programs: 'Programs',
       impact: 'Impact',
       contact: 'Contact',
@@ -38,7 +44,7 @@ export const texts = {
     hero: {
       title: 'TECHNOLOGY\nWITH HEART',
       description: "At LIWAISI, we believe the countryside doesn't need solutions brought from outside, but tools built with its people, its knowledge, and its reality.",
-      button: 'GET STARTED',
+      button: 'DONATE',
     },
     community: {
       title: 'Join the largest irrigation community in Latin America',
@@ -48,6 +54,10 @@ export const texts = {
     partners: {
       title: 'Our partners',
       button: 'I want to be a partner',
+    },
+    about: {
+      title: 'About us',
+      description: 'This is where everything we do begins. We believe in the power of rural communities to transform the future with technology, sustainability, and leadership. This is our reason for being and the origin of Liwaisi Tech.'
     },
     footer: {
       follow: 'Follow Liwaisi',

@@ -7,7 +7,7 @@ interface PartnersSectionProps {
 }
 
 export const PartnersSection = ({ lang }: PartnersSectionProps) => (
-  <section className={styles['partners-section']}>
+  <section id="partners" className={styles['partners-section']}>
     <h2 className={styles['partners-title']}>{texts[lang].partners.title}</h2>
     <div className={styles['partners-carousel']}>
       <button className={styles['carousel-arrow']}>&#60;</button>

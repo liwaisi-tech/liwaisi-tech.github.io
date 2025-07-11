@@ -6,7 +6,8 @@ import { CommunitySection } from "./components/CommunitySection/CommunitySection
 import { PartnersSection } from "./components/PartnersSection/PartnersSection";
 import { Footer } from "./components/Footer/Footer";
 import { Lang } from './types/Lang'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { AboutSection } from "./components/AboutSection/AboutSection";
 
 function getAppLang(): Lang {
   const browserLang = navigator.language.slice(0, 2)
@@ -15,11 +16,34 @@ function getAppLang(): Lang {
 }
 
 function App() {
-  const [lang, setLang] = useState<Lang>(getAppLang())
+  const [lang, setLang] = useState<Lang>(getAppLang());
+  const [activeSection, setActiveSection] = useState('hero');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = ['about', 'hero', 'community', 'partners', 'footer'];
+      let found = 'hero';
+      for (const section of sections) {
+        const el = document.getElementById(section);
+        if (el) {
+          const rect = el.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom > 80) {
+            found = section;
+            break;
+          }
+        }
+      }
+      setActiveSection(found);
+    };
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    handleScroll();
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <div className="hero-container">
-      <Navbar lang={lang} onLangChange={setLang} />
+      <Navbar lang={lang} onLangChange={setLang} activeSection={activeSection} />
       <Hero lang={lang} />
+      <AboutSection lang={lang} />
       <CommunitySection lang={lang} />
       <PartnersSection lang={lang} />
       <Footer lang={lang} />
