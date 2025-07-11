@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="hero-container">
       <Navbar lang={lang} onLangChange={setLang} />
-      <Hero lang={lang} background={IMAGES.HERO_BACKGROUND} />
+      <Hero lang={lang} />
       <CommunitySection lang={lang} />
       <PartnersSection lang={lang} />
       <Footer lang={lang} />

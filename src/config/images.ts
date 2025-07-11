@@ -1,20 +1,45 @@
-// Configuración de URLs de imágenes
+import ClasesDesktop from '../assets/images/Clases-desktop.webp';
+import logo from '../assets/icons/Logo.svg';
+import ClasesMobile from '../assets/images/Clases-mobile.webp';
+import EnSesionDesktop from '../assets/images/En-sesion-desktop.webp';
+import EnSesionMobile from '../assets/images/En-sesion-mobile.webp';
+import LaboratorioDesktop from '../assets/images/Laboratorio-desktop.webp';
+import LaboratorioMobile from '../assets/images/Laboratorio-mobile.webp';
+import MonitoreoDesktop from '../assets/images/Monitoreo-desktop.webp';
+import MonitoreoMobile from '../assets/images/Monitoreo-mobile.webp';
+import SensorDesktop from '../assets/images/Sensor-desktop.webp';
+import SensorMobile from '../assets/images/Sensor-mobile.webp';
+import TabrajoHuertaDesktop from '../assets/images/Tabrajo huerta-desktop.webp';
+import TabrajoHuertaMobile from '../assets/images/Tabrajo huerta-mobile.webp';
+import TallerDesktop from '../assets/images/Taller-desktop.webp';
+import TallerMobile from '../assets/images/Taller-mobile.webp';
+import InstalacionDesktop from '../assets/images/instalación-desktop.webp';
+import InstalacionMobile from '../assets/images/instalación-mobile.webp';
+import PracticaHuertaDesktop from '../assets/images/practica huerta-desktop.webp';
+import PracticaHuertaMobile from '../assets/images/practica huerta-mobile.webp';
 export const IMAGES = {
   // Hero Section
-  HERO_BACKGROUND: 'https://drive.google.com/thumbnail?id=1pGy1QA_Q5sOkBY-fC_rpzD4MAxeLv6b8&sz=w1920',
-  
-  // Community Section
-  COMMUNITY_UVA: 'https://drive.google.com/thumbnail?id=1UpVuLGxQjllUAJSjgYr7GOGy_wchW6iH&sz=w1200',
-  COMMUNITY_NARANJAS: 'https://drive.google.com/thumbnail?id=1v-XEBssKeTx-dkhGjt0CeJqJjsXB_B4W&sz=w1200',
-  COMMUNITY_RIEGO: 'https://drive.google.com/thumbnail?id=11iZIeGdbhtCQLJc9A-kbtdsMuvajBD_o&sz=w1200',
-  COMMUNITY_NUEZ: 'https://drive.google.com/thumbnail?id=1GYF92LlvSSukxUPVKvA4I6FcOU2oeaOm&sz=w1200',
-  COMMUNITY_PLATANO: 'https://drive.google.com/thumbnail?id=12CTyadEn1ag3S7fGDl5CmNQWhuVLEpoQ&sz=w1200',
-  COMMUNITY_CAFE: 'https://drive.google.com/thumbnail?id=1iOR6hV4DrQe4hzeuXz1rDaDUS-6pvoQ5&sz=w1200', 
-  COMMUNITY_TOMATE: 'https://drive.google.com/thumbnail?id=1oho2EgeUREOUtVVmVO6a-qYTWIvQBgzT&sz=w1200',
-  COMMUNITY_MAIZ: 'https://drive.google.com/thumbnail?id=1l-pHyfhDPeDro-s-g0LrjoAB5o_rVNHi&sz=w1200',
-  
+  LOGO : logo,
+  HERO_BACKGROUND: ClasesDesktop,
+  HERO_BACKGROUND_MOBILE: ClasesMobile,
+  EN_SESION_DESKTOP: EnSesionDesktop,
+  EN_SESION_MOBILE: EnSesionMobile,
+  LABORATORIO_DESKTOP: LaboratorioDesktop,
+  LABORATORIO_MOBILE: LaboratorioMobile,
   // Partners Section
-  PARTNER_AGRONOMOS: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/Logo-ingenieros-agronomos-chile.png',
-  // Logo
-  LOGO: '/src/assets/icons/Logo.svg',
-} as const; 
+  MONITOREO_DESKTOP: MonitoreoDesktop,
+  MONITOREO_MOBILE: MonitoreoMobile,
+  SENSOR_DESKTOP: SensorDesktop,
+  SENSOR_MOBILE: SensorMobile,
+  // Partners Section
+  TABRAJO_HUERTA_DESKTOP: TabrajoHuertaDesktop,
+  TABRAJO_HUERTA_MOBILE: TabrajoHuertaMobile,
+  TALLER_DESKTOP: TallerDesktop,
+  TALLER_MOBILE: TallerMobile,
+  // Partners Section
+  INSTALACION_DESKTOP: InstalacionDesktop,
+  INSTALACION_MOBILE: InstalacionMobile,
+  // Partners Section
+  PRACTICA_HUERTA_DESKTOP: PracticaHuertaDesktop,
+  PRACTICA_HUERTA_MOBILE: PracticaHuertaMobile,
+} as const;
