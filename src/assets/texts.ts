@@ -1,43 +1,43 @@
 export const texts = {
   es: {
     navbar: {
-      about: 'Raíz y Propósito',
       hero: 'Dona',
-      programs: 'Programas',
+      programs: 'Comunidad',
+      parners: 'Aliados',
       impact: 'Impacto',
       contact: 'Contacto',
     },
     hero: {
       title: 'TECNOLOGIA\nCON PROPOSITO',
-      description: 'En LIWAISI, creemos que el campo no necesita soluciones impuestas, sino herramientas construidas con su gente, su conocimiento y su realidad.',
+      description: 'En LIWAISI, Creemos en un campo donde la tecnología no reemplaza a la gente, la potencia. Con tu apoyo podemos seguir sembrando conocimiento en los jovenes del futuro rural para que construyan soluciones sostenibles con innovación.\nSi tú también crees en un mundo donde las raíces importan tanto como el progreso…',
       button: 'DONA',
     },
     community: {
-      title: 'Únete a la comunidad de riego más grande de América Latina',
-      description: 'Accede a capacitaciones e informes de especialistas y mantente a la vanguardia económica, productiva y ambiental.',
-      button: 'Ver contenidos',
+      title: 'Comunidad Tech para el campo en YOUTUBE.',
+      description: ' Únete a nuestro canal y se parte de la comunidad que impulsa innovación para lugares rurales. Videos, ideas y herramientas tech para transformar el campo.',
+      button: 'Activa tu poder tech',
     },
     partners: {
-      title: 'Nuestros partners',
-      button: 'Quiero ser partner',
+      title: 'Nuestros Aliados',
+      button: 'Quiero ser Aliado',
     },
     about: {
       title: 'Raíz y Propósito',
-      description: 'Aquí nace todo lo que hacemos. Creemos en el poder de las comunidades rurales para transformar el futuro con tecnología, sostenibilidad y liderazgo. Esta es nuestra razón de ser y el origen de Liwaisi Tech.'
+      description: 'Creemos en el poder de las comunidades rurales para transformar el futuro con tecnología, sostenibilidad y liderazgo. Esta es nuestra razón de ser y el origen de Liwaisi Tech. Aquí nace todo lo que hacemos.'
     },
     footer: {
       follow: 'Sigue a Liwaisi',
       contact: 'Contacto',
-      email: 'info@liwaisi.com',
-      legal: '©2024 Todos los derechos reservados | Políticas de Privacidad.',
-      claim: 'cada gota cuenta.',
+      email: 'liwaisitech@gmail.com',
+      legal: '©2025 Todos los derechos reservados | Políticas de Privacidad.',
+      claim: 'Innova, Conecta y Transforma.',
     },
   },
   en: {
     navbar: {
-      about: 'About',
       hero: 'Donate',
       programs: 'Programs',
+      parners: 'Parners',
       impact: 'Impact',
       contact: 'Contact',
     },
@@ -62,9 +62,9 @@ export const texts = {
     footer: {
       follow: 'Follow Liwaisi',
       contact: 'Contact',
-      email: 'info@liwaisi.com',
-      legal: '©2024 All rights reserved | Privacy Policy.',
-      claim: 'every drop counts.',
+      email: 'liwaisitech@gmail.com',
+      legal: '©2025 All rights reserved | Privacy Policy.',
+      claim: 'Innovate, Connect and Transform.',
     },
   },
 }; 

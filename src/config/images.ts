@@ -17,6 +17,11 @@ import InstalacionDesktop from '../assets/images/instalación-desktop.webp';
 import InstalacionMobile from '../assets/images/instalación-mobile.webp';
 import PracticaHuertaDesktop from '../assets/images/practica huerta-desktop.webp';
 import PracticaHuertaMobile from '../assets/images/practica huerta-mobile.webp';
+import Nelis from '../assets/images/3-desktop.webp';
+import Ecoingenio from '../assets/images/Ecoingenio-mobile.webp';
+import rinconVerde from '../assets/images/4-desktop.webp';
+import omlatam from '../assets/images/2-mobile.webp';
+import almaDo from '../assets/images/5-desktop.webp';
 export const IMAGES = {
   // Hero Section
   LOGO : logo,
@@ -42,4 +47,10 @@ export const IMAGES = {
   // Partners Section
   PRACTICA_HUERTA_DESKTOP: PracticaHuertaDesktop,
   PRACTICA_HUERTA_MOBILE: PracticaHuertaMobile,
+  NELIS: Nelis,
+  ECOingenio: Ecoingenio,
+  RINCON_VERDE:rinconVerde,
+  ALMA_DO: almaDo,
+  OMLATAM: omlatam,
+
 } as const;

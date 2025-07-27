@@ -21,7 +21,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['about', 'hero', 'community', 'partners', 'footer'];
+      const sections = ['partners', 'hero', 'community', 'impact', 'footer'];
       let found = 'hero';
       for (const section of sections) {
         const el = document.getElementById(section);
@@ -43,8 +43,8 @@ function App() {
     <div className="hero-container">
       <Navbar lang={lang} onLangChange={setLang} activeSection={activeSection} />
       <Hero lang={lang} />
-      <AboutSection lang={lang} />
       <CommunitySection lang={lang} />
+      <AboutSection lang={lang} />
       <PartnersSection lang={lang} />
       <Footer lang={lang} />
     </div>

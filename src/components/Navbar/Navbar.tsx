@@ -23,10 +23,10 @@ export const Navbar = ({ lang, onLangChange, activeSection }: NavbarProps) => {
         <img src={IMAGES.LOGO} alt="LIWAISI Logo" className={styles['logo-img']} />
       </div>
       <nav className={styles['nav-desktop']}>
-        <a href="#about" className={activeSection === 'about' ? styles['active-link'] : ''}>{navTexts.about}</a>
         <a href="#hero" className={activeSection === 'hero' ? styles['active-link'] : ''}>{navTexts.hero}</a>
         <a href="#community" className={activeSection === 'community' ? styles['active-link'] : ''}>{navTexts.programs}</a>
-        <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''}>{navTexts.impact}</a>
+        <a href="#impact" className={activeSection === 'impact' ? styles['active-link'] : ''}>{navTexts.impact}</a>
+        <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''}>{navTexts.parners}</a>
         <a href="#footer" className={activeSection === 'footer' ? styles['active-link'] : ''}>{navTexts.contact}</a>
       </nav>
       <div className={styles['nav-actions']}>
@@ -52,10 +52,10 @@ export const Navbar = ({ lang, onLangChange, activeSection }: NavbarProps) => {
             exit={{ x: '100%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           >
-            <a href="#about" className={activeSection === 'about' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.about}</a>
             <a href="#hero" className={activeSection === 'hero' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.hero}</a>
             <a href="#community" className={activeSection === 'community' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.programs}</a>
-            <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.impact}</a>
+            <a href="#impact" className={activeSection === 'impact' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.impact}</a>
+            <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.parners}</a>
             <a href="#footer" className={activeSection === 'footer' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.contact}</a>
           </motion.nav>
         )}
