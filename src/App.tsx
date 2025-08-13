@@ -8,6 +8,7 @@ import { Footer } from "./components/Footer/Footer";
 import { Lang } from './types/Lang'
 import { useEffect, useState } from 'react'
 import { AboutSection } from "./components/AboutSection/AboutSection";
+import { ImpactSection } from "./components/ImpactSection/ImpactSection";
 
 function getAppLang(): Lang {
   const browserLang = navigator.language.slice(0, 2)
@@ -21,18 +22,26 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['partners', 'hero', 'community', 'impact', 'footer'];
+      const sections = ['hero', 'about', 'community', 'impact', 'partners', 'footer'];
+      const viewportCenter = window.innerHeight / 2;
       let found = 'hero';
-      for (const section of sections) {
-        const el = document.getElementById(section);
-        if (el) {
-          const rect = el.getBoundingClientRect();
-          if (rect.top <= 80 && rect.bottom > 80) {
-            found = section;
-            break;
+      let minDistance = Infinity;
+      
+      for (const sectionId of sections) {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const sectionCenter = rect.top + rect.height / 2;
+          const distance = Math.abs(sectionCenter - viewportCenter);
+          
+          // Si esta sección está más cerca del centro del viewport
+          if (distance < minDistance && rect.top < viewportCenter && rect.bottom > viewportCenter) {
+            minDistance = distance;
+            found = sectionId;
           }
         }
       }
+      
       setActiveSection(found);
     };
     window.addEventListener('scroll', handleScroll, { passive: true });
@@ -43,8 +52,9 @@ function App() {
     <div className="hero-container">
       <Navbar lang={lang} onLangChange={setLang} activeSection={activeSection} />
       <Hero lang={lang} />
-      <CommunitySection lang={lang} />
       <AboutSection lang={lang} />
+      <CommunitySection lang={lang} />
+      <ImpactSection lang={lang} />
       <PartnersSection lang={lang} />
       <Footer lang={lang} />
     </div>

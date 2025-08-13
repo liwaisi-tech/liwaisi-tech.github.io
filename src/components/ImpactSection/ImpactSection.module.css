@@ -1,0 +1,83 @@
+.impact-section {
+    margin-top: 3rem;
+    background: #eaf2fb;
+    border-radius: 18px;
+    padding: 2.5rem 1.5rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 12px rgba(44,62,80,0.07);
+    text-align: left;
+  }
+  .impact-title {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #234077;
+    margin-bottom: 2.5rem;
+    text-align: left;
+  }
+  .impact-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    justify-content: space-between;
+  }
+  .impact-card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+    padding: 2rem 2rem 1.5rem 2rem;
+    flex: 1 1 350px;
+    min-width: 320px;
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .impact-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #234077;
+    margin-bottom: 0.5rem;
+  }
+  .impact-card-desc {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+  }
+  .impact-card-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .impact-card-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-size: 1.05rem;
+    color: #234077;
+  }
+  .impact-card-icon {
+    font-size: 1.6rem;
+    color: #37c3d1;
+    min-width: 32px;
+  }
+  @media (max-width: 900px) {
+    .impact-cards {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .impact-card {
+      min-width: 0;
+      max-width: 100%;
+      padding: 1.2rem 1rem 1rem 1rem;
+    }
+    .impact-title {
+      font-size: 2rem;
+    }
+  }
+
+

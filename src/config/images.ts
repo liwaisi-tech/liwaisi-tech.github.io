@@ -22,6 +22,8 @@ import Ecoingenio from '../assets/images/Ecoingenio-mobile.webp';
 import rinconVerde from '../assets/images/4-desktop.webp';
 import omlatam from '../assets/images/2-mobile.webp';
 import almaDo from '../assets/images/5-desktop.webp';
+import Pacha from '../assets/images/Pacha-desktop.webp';
+import ValoresDesktop from '../assets/images/Valores-desktop.webp';
 export const IMAGES = {
   // Hero Section
   LOGO : logo,
@@ -52,5 +54,7 @@ export const IMAGES = {
   RINCON_VERDE:rinconVerde,
   ALMA_DO: almaDo,
   OMLATAM: omlatam,
+  PACHA: Pacha,
+  VALORES_DESKTOP: ValoresDesktop,
 
 } as const;
