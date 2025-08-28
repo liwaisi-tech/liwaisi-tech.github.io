@@ -22,7 +22,14 @@ export const Hero = ({ lang }: HeroProps) => {
       <section className={styles['hero-text']}>
         <h1 className={styles['hero-title']}>{texts[lang].hero.title.split('\n').map((line, i) => <span key={i}>{line}<br/></span>)}</h1>
         <p className={styles['hero-description']}>{texts[lang].hero.description}</p>
-        <button className={styles['hero-btn']}>{texts[lang].hero.button}</button>
+        <a 
+          href="https://link.mercadopago.com.co/liwasishop" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className={styles['hero-btn']}
+        >
+          {texts[lang].hero.button}
+        </a>
       </section>
     </main>
   );
