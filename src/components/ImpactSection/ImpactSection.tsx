@@ -1,4 +1,3 @@
-import React from 'react';
 import { texts } from '../../assets/texts';
 import styles from './ImpactSection.module.css';
 

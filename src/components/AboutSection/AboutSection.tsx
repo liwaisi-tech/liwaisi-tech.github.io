@@ -1,4 +1,3 @@
-import React from 'react';
 import { texts } from '../../assets/texts';
 import { IMAGES } from '../../config/images';
 import styles from './AboutSection.module.css';
