@@ -30,17 +30,33 @@ export const Navbar = ({ lang, onLangChange, activeSection }: NavbarProps) => {
   const handleCloseForm = () => {
     setShowContactForm(false);
   };
+
+  const handleNavigate = (e: React.MouseEvent, targetId: string) => {
+    e.preventDefault();
+    const element = document.getElementById(targetId);
+    if (element) {
+      const navbarHeight = 96; // Altura aproximada del navbar
+      const offset = 100; // Offset adicional para centrar mejor
+      const elementPosition = element.offsetTop - navbarHeight - offset;
+      
+      window.scrollTo({
+        top: Math.max(0, elementPosition),
+        behavior: 'smooth'
+      });
+    }
+    setMenuOpen(false);
+  };
   return (
     <header className={styles['navbar']}>
       <div className={styles['logo']}>
         <img src={IMAGES.LOGO} alt="LIWAISI Logo" className={styles['logo-img']} />
       </div>
       <nav className={styles['nav-desktop']}>
-        <a href="#about" className={activeSection === 'about' ? styles['active-link'] : ''}>{navTexts.about}</a>
-        <a href="#hero" className={activeSection === 'hero' ? styles['active-link'] : ''}>{navTexts.hero}</a>
-        <a href="#community" className={activeSection === 'community' ? styles['active-link'] : ''}>{navTexts.programs}</a>
-        <a href="#impact" className={activeSection === 'impact' ? styles['active-link'] : ''}>{navTexts.impact}</a>
-        <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''}>{navTexts.parners}</a>
+        <a href="#about" className={activeSection === 'about' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'about')}>{navTexts.about}</a>
+        <a href="#hero" className={activeSection === 'hero' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'hero')}>{navTexts.hero}</a>
+        <a href="#community" className={activeSection === 'community' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'community')}>{navTexts.programs}</a>
+        <a href="#impact" className={activeSection === 'impact' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'impact')}>{navTexts.impact}</a>
+        <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'partners')}>{navTexts.parners}</a>
         <a href="#footer" className={activeSection === 'footer' ? styles['active-link'] : ''} onClick={handleContactClick}>{navTexts.contact}</a>
       </nav>
       <div className={styles['nav-actions']}>
@@ -66,11 +82,11 @@ export const Navbar = ({ lang, onLangChange, activeSection }: NavbarProps) => {
             exit={{ x: '100%' }}
             transition={{ type: 'spring', stiffness: 300, damping: 30 }}
           >
-            <a href="#about" className={activeSection === 'about' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.about}</a>
-            <a href="#hero" className={activeSection === 'hero' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.hero}</a>
-            <a href="#community" className={activeSection === 'community' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.programs}</a>
-            <a href="#impact" className={activeSection === 'impact' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.impact}</a>
-            <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''} onClick={() => setMenuOpen(false)}>{navTexts.parners}</a>
+            <a href="#about" className={activeSection === 'about' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'about')}>{navTexts.about}</a>
+            <a href="#hero" className={activeSection === 'hero' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'hero')}>{navTexts.hero}</a>
+            <a href="#community" className={activeSection === 'community' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'community')}>{navTexts.programs}</a>
+            <a href="#impact" className={activeSection === 'impact' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'impact')}>{navTexts.impact}</a>
+            <a href="#partners" className={activeSection === 'partners' ? styles['active-link'] : ''} onClick={(e) => handleNavigate(e, 'partners')}>{navTexts.parners}</a>
             <a href="#footer" className={activeSection === 'footer' ? styles['active-link'] : ''} onClick={handleContactClick}>{navTexts.contact}</a>
           </motion.nav>
         )}
