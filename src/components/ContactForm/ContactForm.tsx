@@ -6,9 +6,10 @@ import styles from './ContactForm.module.css';
 
 interface ContactFormProps {
   lang: 'es' | 'en';
+  onSuccess?: () => void;
 }
 
-export const ContactForm = ({ lang }: ContactFormProps) => {
+export const ContactForm = ({ lang, onSuccess }: ContactFormProps) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -83,8 +84,16 @@ export const ContactForm = ({ lang }: ContactFormProps) => {
           newsletter: false
         });
 
-        // Clear message after 5 seconds
-        setTimeout(() => setMessage({ type: null, text: '' }), 5000);
+        // Close modal after showing success message
+        const closeTimeout = setTimeout(() => {
+          if (onSuccess) {
+            onSuccess();
+          } else {
+            setMessage({ type: null, text: '' });
+          }
+        }, 2000);
+
+        return () => clearTimeout(closeTimeout);
       }
     } catch (error) {
       console.error('Email send error:', error);

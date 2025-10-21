@@ -102,7 +102,7 @@ export const Navbar = ({ lang, onLangChange, activeSection }: NavbarProps) => {
             >
               ×
             </button>
-            <ContactForm lang={langKey as 'es' | 'en'} />
+            <ContactForm lang={langKey as 'es' | 'en'} onSuccess={handleCloseForm} />
           </div>
         </div>
       )}

@@ -78,7 +78,7 @@ export const PartnersSection = ({ lang }: PartnersSectionProps) => {
             >
               ×
             </button>
-            <ContactForm lang={lang} />
+            <ContactForm lang={lang} onSuccess={handleCloseForm} />
           </div>
         </div>
       )}

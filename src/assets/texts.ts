@@ -26,7 +26,7 @@ export const texts = {
       title: 'Lo que nos mueve',
       description: 'En Liwaisi sabemos que el talento rural puede cambiar el mundo sin abandonar sus raíces. Por eso acompañamos a jóvenes y emprendedores para que usen y construyan tecnología con propósito, accesible y sostenible, capaz de fortalecer sus negocios, cuidar el entorno y abrirles caminos de bienestar en su propia tierra.',
       howTitle: 'Como lo hacemos?',
-      howDescription: 'Conectamos a personas de zonas rurales con tecnológia práctica e innovadora a través de nuestros programas, productos y servicios,  buscando impulsar su desarrollo profesional, económico y personal. Brindamos apoyo constante a través de mentorías personalizadas y contamos con una red   para  brindar apoyo y co-crear soluciones de impacto en las comunidades'
+      howDescription: 'Conectamos a personas de zonas rurales con tecnológia práctica e innovadora a través de nuestros programas, productos y servicios,  buscando impulsar su desarrollo profesional, económico y personal. Brindamos apoyo constante a través de mentorías personalizadas y contamos con una red para brindar apoyo y co-crear soluciones de impacto en las comunidades.'
     },
     impact: {
       title: 'Nuestra huella',
