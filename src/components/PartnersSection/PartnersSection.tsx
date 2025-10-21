@@ -25,19 +25,39 @@ export const PartnersSection = ({ lang }: PartnersSectionProps) => {
         <h2 className={styles['partners-title']}>{texts[lang].partners.title}</h2>
         <div className={styles['carousel-logos-wrapper']}>
           <div className={styles['carousel-logos']}>
-            <img className={styles['partner-logo']} src={IMAGES.NELIS} alt="Nelis Global" />
+            <a href="https://nelisglobal.org/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.NELIS} alt="Nelis Global" />
+            </a>
             <img className={styles['partner-logo']} src={IMAGES.ECOingenio} alt="ECOIngenio" />
-            <img className={styles['partner-logo']} src={IMAGES.RINCON_VERDE} alt="Rincón Verde" />
-            <img className={styles['partner-logo']} src={IMAGES.OMLATAM} alt="OMLATAM" />
-            <img className={styles['partner-logo']} src={IMAGES.ALMA_DO} alt="Alma do Terra" />
-            <img className={styles['partner-logo']} src={IMAGES.PACHA} alt="Pacha" />
+            <a href="https://www.instagram.com/rincon_verde/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.RINCON_VERDE} alt="Rincón Verde" />
+            </a>
+            <a href="https://omlatam.org/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.OMLATAM} alt="OMLATAM" />
+            </a>
+            <a href="https://www.instagram.com/almadoterracol/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.ALMA_DO} alt="Alma do Terra" />
+            </a>
+            <a href="https://www.pachaecohub.com/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.PACHA} alt="Pacha" />
+            </a>
             {/* Duplicamos los logos para efecto infinito */}
-            <img className={styles['partner-logo']} src={IMAGES.NELIS} alt="Nelis Global" />
+            <a href="https://nelisglobal.org/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.NELIS} alt="Nelis Global" />
+            </a>
             <img className={styles['partner-logo']} src={IMAGES.ECOingenio} alt="ECOIngenio" />
-            <img className={styles['partner-logo']} src={IMAGES.RINCON_VERDE} alt="Rincón Verde" />
-            <img className={styles['partner-logo']} src={IMAGES.OMLATAM} alt="OMLATAM" />
-            <img className={styles['partner-logo']} src={IMAGES.ALMA_DO} alt="Alma do Terra" />
-            <img className={styles['partner-logo']} src={IMAGES.PACHA} alt="Pacha" />
+            <a href="https://www.instagram.com/rincon_verde/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.RINCON_VERDE} alt="Rincón Verde" />
+            </a>
+            <a href="https://omlatam.org/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.OMLATAM} alt="OMLATAM" />
+            </a>
+            <a href="https://www.instagram.com/almadoterracol/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.ALMA_DO} alt="Alma do Terra" />
+            </a>
+            <a href="https://www.pachaecohub.com/" target="_blank" rel="noopener noreferrer">
+              <img className={styles['partner-logo']} src={IMAGES.PACHA} alt="Pacha" />
+            </a>
           </div>
         </div>
         <button 

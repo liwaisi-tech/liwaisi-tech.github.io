@@ -1,5 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import emailjs from '@emailjs/browser';
 import { texts } from '../../assets/texts';
+import { EMAIL_CONFIG } from '../../config/emailConfig';
 import styles from './ContactForm.module.css';
 
 interface ContactFormProps {
@@ -18,6 +20,17 @@ export const ContactForm = ({ lang }: ContactFormProps) => {
     newsletter: false
   });
 
+  const [loading, setLoading] = useState(false);
+  const [message, setMessage] = useState<{ type: 'success' | 'error' | null; text: string }>({
+    type: null,
+    text: ''
+  });
+
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init(EMAIL_CONFIG.PUBLIC_KEY);
+  }, []);
+
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value, type } = e.target;
     setFormData(prev => ({
@@ -26,9 +39,64 @@ export const ContactForm = ({ lang }: ContactFormProps) => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setLoading(true);
+    setMessage({ type: null, text: '' });
+
+    try {
+      const templateParams = {
+        to_email: EMAIL_CONFIG.RECIPIENT_EMAIL,
+        from_email: formData.email,
+        from_name: formData.name,
+        phone: formData.phone,
+        country: formData.country,
+        company: formData.company,
+        area: formData.area,
+        comment: formData.comment,
+        newsletter: formData.newsletter ? 'Sí' : 'No'
+      };
+
+      const result = await emailjs.send(
+        EMAIL_CONFIG.SERVICE_ID,
+        EMAIL_CONFIG.TEMPLATE_ID,
+        templateParams
+      );
+
+      if (result.status === 200) {
+        setMessage({
+          type: 'success',
+          text: lang === 'es'
+            ? '¡Gracias! Tu mensaje ha sido enviado correctamente.'
+            : 'Thank you! Your message has been sent successfully.'
+        });
+
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          country: '',
+          company: '',
+          area: '',
+          comment: '',
+          newsletter: false
+        });
+
+        // Clear message after 5 seconds
+        setTimeout(() => setMessage({ type: null, text: '' }), 5000);
+      }
+    } catch (error) {
+      console.error('Email send error:', error);
+      setMessage({
+        type: 'error',
+        text: lang === 'es'
+          ? 'Hubo un error al enviar tu mensaje. Por favor, intenta de nuevo.'
+          : 'There was an error sending your message. Please try again.'
+      });
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -129,9 +197,26 @@ export const ContactForm = ({ lang }: ContactFormProps) => {
           {texts[lang].contactForm.newsletterText}
         </label>
         
-        <button type="submit" className={styles['form-button']}>
-          {texts[lang].contactForm.submitButton}
+        <button
+          type="submit"
+          className={styles['form-button']}
+          disabled={loading}
+        >
+          {loading
+            ? lang === 'es'
+              ? 'Enviando...'
+              : 'Sending...'
+            : texts[lang].contactForm.submitButton}
         </button>
+
+        {message.type && (
+          <div
+            className={`${styles['message']} ${styles[`message-${message.type}`]}`}
+            role="alert"
+          >
+            {message.text}
+          </div>
+        )}
       </form>
     </section>
   );

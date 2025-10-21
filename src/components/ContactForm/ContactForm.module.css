@@ -109,6 +109,50 @@
   transform: translateY(0);
 }
 
+.form-button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.form-button:disabled:hover {
+  background: #9ca3af;
+  transform: none;
+}
+
+.message {
+  padding: 1rem;
+  border-radius: 8px;
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+  animation: slideIn 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.message-success {
+  background: #d1fae5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.message-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fecaca;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media (max-width: 768px) {
   .contact-form-section {
     padding: 2rem 1rem;

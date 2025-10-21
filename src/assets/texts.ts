@@ -34,7 +34,7 @@ export const texts = {
         title: 'IA para la gestión del riego',
         description: 'Nuestro dispositivo de gestión eficiente del agua basada en datos de monitoreo,agricultura regenerativa e inteligencia artificial.',
         points: [
-          'Trabajamos en nuestro primer prototipo de monitoreo y control de riego con sensores para control de riego segun necesidad de la siembra.',
+          'Trabajamos en nuestro primer prototipo de monitoreo y control de riego usando sensores de humedad según necesidad de la siembra.',
           'Usamos IA, para analisis,consultas o alertas de humedad del suelo específico del sitio para cada siembra. Utilizamos hardware.',
           'Proporcionamos recomendaciones de riego y siembra específicas, en texto simple, que permiten al agricultor regar y hacer mejoras para produccion,según necesidades reales.'
         ]
@@ -44,7 +44,7 @@ export const texts = {
         description: 'Llevamos 1 año con nuestros talleres, mentorias y bootcamp brindado apoyo y/o co-crear con , jovenes y comunidades.',
         points: [
           'Hemos llegado a 2 instituciones educativas rurales con charlas y talleres sobre uso de la IA.',
-          'Impactamos a más de 500 estudiantes con talleres y bootcamp en el uso tecnologías, habilidades de liderago e innovación aplicable y resilente. Tanto en zonas urbanas como rurales',
+          'Impactamos a más de 200 estudiantes con talleres y bootcamp en el uso tecnologías, habilidades de liderazgo e innovación aplicable y resiliente. Tanto en zonas urbanas como rurales',
           'Brindamos apoyo constante a 3 emprendimientos y 5 emprendedores,través de mas de 100 horas de mentorías personalizadas para que adapten y usen herramientas tecnologicas que potencian sus ideas de negocio'
         ]
       }
@@ -67,7 +67,7 @@ export const texts = {
       contact: 'Contacto',
       email: 'liwaisitech@gmail.com',
       legal: '©2025 Todos los derechos reservados | Políticas de Privacidad.',
-      claim: 'Innova, Conecta y Transforma.',
+      claim: ' Liwaisi Innova, Conecta y Transforma.',
     },
   },
   en: {
@@ -138,7 +138,7 @@ export const texts = {
       contact: 'Contact',
       email: 'liwaisitech@gmail.com',
       legal: '©2025 All rights reserved | Privacy Policy.',
-      claim: 'Innovate, Connect and Transform.',
+      claim: 'Liwaisi Innovate, Connect and Transform.',
     },
   },
 }; 

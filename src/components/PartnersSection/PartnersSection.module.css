@@ -27,6 +27,19 @@
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(44,62,80,0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-logos a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.carousel-logos a:hover .partner-logo {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(44,62,80,0.15);
 }
 .carousel-logos-wrapper {
   width: 100%;
