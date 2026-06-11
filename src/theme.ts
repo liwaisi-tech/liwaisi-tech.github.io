@@ -61,12 +61,16 @@ export const tokens = {
  * Injects all brand CSS custom properties into :root.
  * Safe to call once at module init; idempotent on repeated calls.
  * Call from main.tsx BEFORE the React tree mounts.
+ *
+ * Default mode is DARK per Manual de Marca V3.3 section 7.1 — Verde Abismo
+ * is the main background. A future light-mode toggle will override these
+ * by re-assigning the same variables on a data attribute or class.
  */
 export const applyTheme = (): void => {
   const root = document.documentElement;
-  root.style.setProperty('--color-bg-primary',      palette.verdeAbismo);
-  root.style.setProperty('--color-bg-secondary',    palette.verdeTierra);
-  root.style.setProperty('--color-bg-light',        palette.blancoNube);
+  root.style.setProperty('--color-bg-primary',      palette.verdeAbismo);   // dark by default
+  root.style.setProperty('--color-bg-secondary',    palette.verdeTierra);   // secondary dark variant
+  root.style.setProperty('--color-bg-light',        palette.blancoNube);    // for explicit light surfaces
   root.style.setProperty('--color-text-primary',    palette.verdeAbismo);
   root.style.setProperty('--color-text-secondary',  palette.grisTecnico);
   root.style.setProperty('--color-text-inverse',    palette.blancoNube);

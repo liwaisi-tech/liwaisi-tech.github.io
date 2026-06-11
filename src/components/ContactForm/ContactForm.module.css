@@ -1,7 +1,7 @@
 .contact-form-section {
   padding: 2rem;
-  /* neutral-utility: form section background — very light gray */
-  background: #f8f9fa;
+  /* Manual 3.4: Blanco Nube as light surface for form visibility */
+  background: var(--color-bg-light);
   max-width: 600px;
   margin: 0 auto;
   border-radius: 12px;

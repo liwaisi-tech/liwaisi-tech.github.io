@@ -3,11 +3,13 @@
   line-height: 1.5;
   font-weight: 400;
 
-  color-scheme: light;
+  color-scheme: dark;
   /* Brand tokens injected by applyTheme() from theme.ts.
-     These fallback values are identical and ensure SSR/no-JS correctness. */
-  color: var(--color-text-primary);
-  background-color: var(--color-bg-light);
+     Default mode is DARK per Manual de Marca V3.3 section 7.1
+     (Verde Abismo as main bg). Fallback values mirror the brand palette
+     to keep SSR/no-JS rendering consistent. */
+  color: var(--color-text-inverse);
+  background-color: var(--color-bg-primary);
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -21,15 +23,15 @@ a {
   text-decoration: inherit;
 }
 a:hover {
-  color: var(--color-text-primary);
+  color: var(--color-text-inverse);
 }
 
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background: var(--color-bg-light);
-  color: var(--color-text-primary);
+  background: var(--color-bg-primary);
+  color: var(--color-text-inverse);
 }
 
 h1 {
@@ -50,7 +52,7 @@ button {
   transition: border-color 0.25s, background 0.2s, color 0.2s;
 }
 button:hover {
-  border-color: var(--color-text-primary);
+  border-color: var(--color-text-inverse);
   background: var(--color-action-hover);
   color: var(--color-text-primary);
 }
@@ -59,17 +61,15 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
-/* out-of-scope: dark mode toggle is deferred per SDD proposal */
-@media (prefers-color-scheme: dark) {
+/* Light-mode override is deferred (no toggle yet). When added, it will
+   redefine these vars under [data-theme="light"]. */
+@media (prefers-color-scheme: light) {
   :root {
-    color: var(--color-text-inverse);
-    background-color: var(--color-bg-secondary);
+    color: var(--color-text-primary);
+    background-color: var(--color-bg-light);
   }
-  a:hover {
-    color: var(--color-action-primary);
-  }
-  button {
-    background-color: var(--color-bg-secondary);
-    color: var(--color-text-inverse);
+  body {
+    background: var(--color-bg-light);
+    color: var(--color-text-primary);
   }
 }

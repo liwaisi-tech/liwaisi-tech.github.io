@@ -4,7 +4,8 @@ html, body {
   width: 100vw;
   min-height: 100vh;
   box-sizing: border-box;
-  background: var(--color-bg-light);
+  /* Manual 7.1: Verde Abismo as default page background */
+  background: var(--color-bg-primary);
 }
 #root {
   margin: 0;
@@ -62,7 +63,8 @@ html, body {
 
 .hero-container {
   min-height: 100vh;
-  background: var(--color-bg-light);
+  /* Manual 7.1: Verde Abismo default bg */
+  background: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
@@ -105,8 +107,8 @@ html, body {
   font-size: 1rem;
   border: 1px solid var(--color-border-subtle);
   background: var(--color-bg-primary);
-  /* Q2 resolved: navy #234077 → Verde Clorofila for interactive elements */
-  color: var(--color-action-primary);
+  /* Q2 resolved: navy #234077 → Blanco Nube for legibility on dark navbar */
+  color: var(--color-text-inverse);
   outline: none;
   transition: border 0.2s;
 }
@@ -192,7 +194,7 @@ html, body {
   height: 100vh;
   width: 80vw;
   max-width: 320px;
-  background: var(--color-bg-light);
+  background: var(--color-bg-primary);
   box-shadow: -2px 0 16px rgba(16,48,53,0.10);
   display: flex;
   flex-direction: column;
@@ -201,7 +203,7 @@ html, body {
   z-index: 100;
 }
 .nav-mobile a {
-  color: var(--color-text-primary);
+  color: var(--color-text-inverse);
   font-size: 1.3rem;
   font-weight: 600;
   text-decoration: none;
@@ -266,8 +268,8 @@ html, body {
     min-height: 72px;
     padding: 0 1.2rem;
     padding-bottom: 8px;
-    /* brand-decision: mobile-navbar-decorative-gradient — neutral utility gradient on mobile */
-    background: linear-gradient(270deg, #e0e0e0 0%, var(--color-bg-light) 100%);
+    /* Q1 resolved: keep dark navbar on mobile for brand consistency */
+    background: var(--color-bg-primary);
   }
 }
 
@@ -314,7 +316,8 @@ html, body {
   align-items: flex-start;
   gap: 3rem;
   padding: 3rem 2vw 3rem 6vw;
-  background: var(--color-bg-light);
+  /* Verde Abismo bg per user feedback */
+  background: var(--color-bg-primary);
 }
 .community-content {
   flex: 1 1 40%;
@@ -324,8 +327,8 @@ html, body {
   justify-content: center;
 }
 .community-desc {
-  /* Q2 resolved: #2d3748 → Verde Abismo text */
-  color: var(--color-text-primary);
+  /* text on Verde Tierra → Blanco Nube per manual 3.4 */
+  color: var(--color-text-inverse);
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
   line-height: 1.5;
@@ -389,7 +392,8 @@ html, body {
 }
 
 .partners-section {
-  background: var(--color-bg-light);
+  /* Verde Abismo bg per user feedback */
+  background: var(--color-bg-primary);
   padding: 2.5rem 0 3.5rem 0;
   display: flex;
   flex-direction: column;
@@ -397,8 +401,8 @@ html, body {
   justify-content: center;
 }
 .partners-title {
-  /* Q2 resolved: #234077 navy → Verde Abismo for text */
-  color: var(--color-text-primary);
+  /* title on Verde Tierra → Blanco Nube */
+  color: var(--color-text-inverse);
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 1.5rem;
