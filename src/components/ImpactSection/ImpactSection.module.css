@@ -1,7 +1,7 @@
 .impact-section {
     margin-top: 3rem;
-    /* neutral-utility: section bg — very light blue-gray (used for visual section separation) */
-    background: #eaf2fb;
+    /* Q1 resolved: section bg → Verde Tierra (manual 3.4: fondos secundarios y separación de bloques) */
+    background: var(--color-bg-secondary);
     border-radius: 18px;
     padding: 2.5rem 1.5rem;
     max-width: 1100px;
@@ -14,8 +14,8 @@
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 2.6rem;
     font-weight: 800;
-    /* Q2 resolved: navy #234077 → action-primary (section heading reads as interactive/brand) */
-    color: var(--color-action-primary);
+    /* Q1 resolved: title over Verde Tierra bg → Blanco Nube (manual 3.4: textos en interfaces oscuras) */
+    color: var(--color-text-inverse);
     margin-bottom: 2.5rem;
     text-align: left;
   }
@@ -41,8 +41,8 @@
   .impact-card-title {
     font-size: 1.5rem;
     font-weight: 700;
-    /* Q2 resolved: navy #234077 → action-primary */
-    color: var(--color-action-primary);
+    /* Q1 resolved: card title over light card on Verde Tierra → text-primary (Verde Abismo) */
+    color: var(--color-text-primary);
     margin-bottom: 0.5rem;
   }
   .impact-card-desc {
@@ -62,8 +62,8 @@
     gap: 0.7rem;
     margin-bottom: 0.7rem;
     font-size: 1.05rem;
-    /* Q2 resolved: navy #234077 → action-primary */
-    color: var(--color-action-primary);
+    /* Q1 resolved: list item over light card on Verde Tierra → text-primary */
+    color: var(--color-text-primary);
   }
   .impact-card-icon {
     font-size: 1.6rem;
