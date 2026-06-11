@@ -16,7 +16,8 @@
 .hero-title {
   font-size: 2.1rem;
   font-weight: 800;
-  color: #fff;
+  /* title on Verde Abismo → Blanco Nube per manual 7.1 */
+  color: var(--color-text-inverse);
   margin-bottom: 1.5rem;
   line-height: 1.1;
   text-align: left;
@@ -24,7 +25,8 @@
   font-weight: 800;
 }
 .hero-description {
-  color: #fff;
+  /* text on Verde Abismo → Blanco Nube */
+  color: var(--color-text-inverse);
   font-size: 1.2rem;
   margin-bottom: 2.5rem;
   line-height: 1.5;
@@ -33,8 +35,9 @@
 }
 .hero-btn {
   font-family: 'Raleway', Arial, Helvetica, sans-serif;
-  background: var(--color-celeste);
-  color: var(--color-verde-oscuro);
+  /* Q2 resolved: legacy celeste var → action-primary (Verde Clorofila) */
+  background: var(--color-action-primary);
+  color: var(--color-text-primary);
   font-weight: bold;
   font-size: 1.1rem;
   border: none;
@@ -45,8 +48,8 @@
   transition: background 0.2s, color 0.2s;
 }
 .hero-btn:hover {
-  background: var(--color-verde-agua);
-  color: var(--color-negro);
+  background: var(--color-action-hover);
+  color: var(--color-text-primary);
 }
 .hero-image {
   display: none;

@@ -8,7 +8,8 @@
   right: 0;
   z-index: 100;
   box-shadow: 0 2px 8px rgba(44,62,80,0.07);
-  background: #fff;
+  /* Q1 resolved: dark navbar — Verde Abismo #0D1B1E */
+  background: var(--color-bg-primary);
 }
 .logo {
   display: flex;
@@ -22,7 +23,7 @@
 }
 .navbar nav a {
   margin-left: 2.5rem;
-  color: var(--color-verde-oscuro);
+  color: var(--color-text-inverse);
   text-decoration: none;
   font-size: 1.2rem;
   font-weight: 500;
@@ -30,12 +31,12 @@
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 .navbar nav a:hover {
-  color: var(--color-celeste);
+  color: var(--color-action-primary);
 }
 .active-link {
-  color: var(--color-celeste);
+  color: var(--color-action-primary);
   font-weight: bold;
-  border-bottom: 2px solid var(--color-celeste);
+  border-bottom: 2px solid var(--color-action-primary);
 }
 .lang-selector {
   margin-left: 1rem;
@@ -43,21 +44,23 @@
   padding: 0.2rem 0.6rem;
   font-weight: 600;
   font-size: 1rem;
-  border: 1px solid #e0e0e0;
-  background: #fff;
-  color: #234077;
+  /* neutral-utility: border — Gris Tecnico */
+  border: 1px solid var(--color-border-subtle);
+  background: var(--color-bg-primary);
+  /* Q1: dark navbar — Blanco Nube for legibility */
+  color: var(--color-text-inverse);
   outline: none;
   transition: border 0.2s;
 }
 .lang-selector:focus {
-  border: 1.5px solid #37c3d1;
+  border: 1.5px solid var(--color-action-primary);
 }
 .nav-hamburger {
   display: block;
   background: none;
   border: none;
   cursor: pointer;
-  color: var(--color-verde-oscuro);
+  color: var(--color-text-inverse);
   z-index: 101;
   margin-left: auto;
 }
@@ -73,7 +76,8 @@
   height: 100vh;
   width: 80vw;
   max-width: 320px;
-  background: var(--color-fondo);
+  /* Q1: dark mobile menu matches dark navbar */
+  background: var(--color-bg-primary);
   box-shadow: -2px 0 16px rgba(16,48,53,0.10);
   display: flex;
   flex-direction: column;
@@ -82,14 +86,14 @@
   z-index: 100;
 }
 .nav-mobile a {
-  color: var(--color-verde-oscuro);
+  color: var(--color-text-inverse);
   font-size: 1.3rem;
   font-weight: 600;
   text-decoration: none;
   transition: color 0.2s;
 }
 .nav-mobile a:hover {
-  color: var(--color-celeste);
+  color: var(--color-action-primary);
 }
 @media (max-width: 900px) {
   .navbar {
@@ -175,7 +179,8 @@
   background: none;
   border: none;
   font-size: 2rem;
-  color: #6b7280;
+  /* neutral-utility: modal close icon — Gris Tecnico */
+  color: var(--color-text-secondary);
   cursor: pointer;
   z-index: 1001;
   width: 40px;
@@ -188,6 +193,7 @@
 }
 
 .modal-close:hover {
+  /* neutral-utility: modal close hover bg — very light gray */
   background: #f3f4f6;
-  color: #374151;
+  color: var(--color-text-primary);
 }

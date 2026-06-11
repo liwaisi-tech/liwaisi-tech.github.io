@@ -1,6 +1,7 @@
 .footer {
-  background: #103035;
-  color: #f5f7fa;
+  /* Q1 resolved: footer bg Verde Abismo */
+  background: var(--color-footer-bg);
+  color: var(--color-footer-text);
   padding: 2.5rem 0 1.5rem 0;
   margin-top: 0;
   font-size: 1rem;
@@ -31,26 +32,28 @@
   justify-content: center;
   width: 44px;
   height: 44px;
-  border: 2px solid #f5f7fa;
+  border: 2px solid var(--color-footer-text);
   border-radius: 50%;
   transition: all 0.3s ease;
   text-decoration: none;
 }
 
 .footer-icons a:hover {
-  border-color: #f89c2b;
-  background: rgba(248, 156, 43, 0.1);
+  /* Q2 resolved: #f89c2b → Verde Clorofila hover */
+  border-color: var(--color-action-primary);
+  background: rgba(46, 204, 113, 0.1);
 }
 
 .icon {
   width: 20px;
   height: 20px;
-  color: #f5f7fa;
+  color: var(--color-footer-text);
   transition: color 0.3s ease;
 }
 
 .footer-icons a:hover .icon {
-  color: #f89c2b;
+  /* Q2 resolved: #f89c2b → Verde Clorofila hover */
+  color: var(--color-action-primary);
 }
 .footer-contact {
   margin-top: 0.5rem;
@@ -66,23 +69,24 @@
 .email-icon {
   width: 18px;
   height: 18px;
-  color: #f5f7fa;
+  color: var(--color-footer-text);
 }
 .footer-legal {
   text-align: center;
-  color: #cfd8e3;
+  /* neutral-utility: muted footer text — Gris Tecnico */
+  color: var(--color-footer-muted);
   font-size: 0.98rem;
   margin-bottom: 1.2rem;
 }
 .footer-divider {
   border: none;
-  border-top: 1.5px solid #cfd8e3;
+  border-top: 1.5px solid var(--color-border-subtle);
   margin: 1.2rem 0 1.2rem 0;
   width: 90%;
 }
 .footer-claim {
   text-align: center;
-  color: #f5f7fa;
+  color: var(--color-footer-text);
   font-size: 1.1rem;
   font-weight: bold;
   letter-spacing: 0.5px;
