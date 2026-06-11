@@ -1,5 +1,6 @@
 .impact-section {
     margin-top: 3rem;
+    /* neutral-utility: section bg — very light blue-gray (used for visual section separation) */
     background: #eaf2fb;
     border-radius: 18px;
     padding: 2.5rem 1.5rem;
@@ -13,7 +14,8 @@
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 2.6rem;
     font-weight: 800;
-    color: #234077;
+    /* Q2 resolved: navy #234077 → action-primary (section heading reads as interactive/brand) */
+    color: var(--color-action-primary);
     margin-bottom: 2.5rem;
     text-align: left;
   }
@@ -24,7 +26,7 @@
     justify-content: space-between;
   }
   .impact-card {
-    background: #fff;
+    background: var(--color-bg-light);
     border-radius: 16px;
     box-shadow: 0 2px 8px rgba(44,62,80,0.08);
     padding: 2rem 2rem 1.5rem 2rem;
@@ -39,12 +41,14 @@
   .impact-card-title {
     font-size: 1.5rem;
     font-weight: 700;
-    color: #234077;
+    /* Q2 resolved: navy #234077 → action-primary */
+    color: var(--color-action-primary);
     margin-bottom: 0.5rem;
   }
   .impact-card-desc {
     font-size: 1.1rem;
-    color: #2d3748;
+    /* Q2 resolved: #2d3748 → text-primary */
+    color: var(--color-text-primary);
     margin-bottom: 0.5rem;
   }
   .impact-card-list {
@@ -58,11 +62,13 @@
     gap: 0.7rem;
     margin-bottom: 0.7rem;
     font-size: 1.05rem;
-    color: #234077;
+    /* Q2 resolved: navy #234077 → action-primary */
+    color: var(--color-action-primary);
   }
   .impact-card-icon {
     font-size: 1.6rem;
-    color: #37c3d1;
+    /* Q2 resolved: celeste #37c3d1 → action-primary */
+    color: var(--color-action-primary);
     min-width: 32px;
   }
   @media (max-width: 900px) {
@@ -79,5 +85,3 @@
       font-size: 2rem;
     }
   }
-
-

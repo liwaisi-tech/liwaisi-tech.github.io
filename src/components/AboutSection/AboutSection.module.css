@@ -1,5 +1,6 @@
 .about-section {
   padding: 3rem 0;
+  /* neutral-utility: about section background — very light gray */
   background: #f5f7fa;
 }
 
@@ -30,7 +31,8 @@
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 800;
   font-size: 2.2rem;
-  color: #234077;
+  /* Q2 resolved: navy #234077 → action-primary */
+  color: var(--color-action-primary);
   margin-bottom: 1rem;
   text-align: center;
 }
@@ -39,7 +41,8 @@
   margin: 1.5rem 0 0 0;
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 1.2rem;
-  color: #2d3748;
+  /* Q2 resolved: #2d3748 → text-primary */
+  color: var(--color-text-primary);
   line-height: 1.5;
 }
 
@@ -47,7 +50,8 @@
   font-family: 'Poppins', Arial, sans-serif;
   font-weight: 700;
   font-size: 1.8rem;
-  color: #234077;
+  /* Q2 resolved: navy #234077 → action-primary */
+  color: var(--color-action-primary);
   margin: 2rem 0 1rem 0;
 }
 
@@ -56,7 +60,8 @@
   margin: 0;
   font-family: 'Nunito', Arial, sans-serif;
   font-size: 1.2rem;
-  color: #2d3748;
+  /* Q2 resolved: #2d3748 → text-primary */
+  color: var(--color-text-primary);
   line-height: 1;
 }
 
@@ -66,12 +71,12 @@
     text-align: center;
     gap: 2rem;
   }
-  
+
   .about-content {
     text-align: center;
   }
-  
+
   .about-description {
     margin: 1.5rem auto 0;
   }
-} 
+}

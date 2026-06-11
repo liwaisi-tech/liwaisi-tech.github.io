@@ -5,9 +5,9 @@
     align-items: flex-start;
     gap: 3rem;
     padding: 3rem 2vw 3rem 6vw;
-    background: #fff;
+    background: var(--color-bg-light);
   }
-  
+
   .community-content {
     flex: 1 1 40%;
     max-width: 520px;
@@ -15,42 +15,45 @@
     flex-direction: column;
     justify-content: center;
   }
-  
+
   .community-title {
     font-family: 'Poppins', Arial, sans-serif;
     font-size: 2.8rem;
     font-weight: 800;
-    color: #234077;
+    /* Q2 resolved: navy #234077 → text-primary */
+    color: var(--color-text-primary);
     margin-bottom: 2rem;
     line-height: 1.1;
   }
-  
+
   .community-desc {
-    color: #2d3748;
+    /* Q2 resolved: #2d3748 → text-primary */
+    color: var(--color-text-primary);
     font-size: 1.2rem;
     margin-bottom: 2.5rem;
     line-height: 1.5;
   }
-  
+
   .community-btn {
     font-family: 'Raleway', Arial, Helvetica, sans-serif;
-    background: var(--color-celeste);
-    color: var(--color-verde-oscuro);
+    /* Q2 resolved: legacy celeste var → action-primary */
+    background: var(--color-action-primary);
+    color: var(--color-text-primary);
     font-weight: bold;
     font-size: 1.1rem;
     border: none;
     border-radius: 24px;
     padding: 0.9rem 2.2rem;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(55,195,209,0.08);
+    box-shadow: 0 2px 8px rgba(46,204,113,0.08);
     transition: background 0.2s, color 0.2s;
   }
-  
+
   .community-btn:hover {
-    background: var(--color-verde-agua);
-    color: var(--color-negro);
+    background: var(--color-action-hover);
+    color: var(--color-text-primary);
   }
-  
+
   /* Nuevo contenedor para el slide */
   .community-gallery {
     position: relative;
@@ -59,7 +62,7 @@
     height: 420px;
     overflow: hidden;
   }
-  
+
   .slide-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -69,7 +72,7 @@
     height: 100%;
     animation: fadeIn 0.5s ease-in-out;
   }
-  
+
   .slide-image {
     width: 100%;
     height: 100%;
@@ -78,11 +81,11 @@
     box-shadow: 0 2px 8px rgba(44,62,80,0.08);
     transition: transform 0.3s ease;
   }
-  
+
   .slide-image:hover {
     transform: scale(1.05);
   }
-  
+
   /* Indicadores de slide */
   .slide-indicators {
     position: absolute;
@@ -93,7 +96,7 @@
     gap: 0.5rem;
     z-index: 10;
   }
-  
+
   .indicator {
     width: 12px;
     height: 12px;
@@ -103,17 +106,18 @@
     cursor: pointer;
     transition: all 0.3s ease;
   }
-  
+
   .indicator:hover {
     background: rgba(255, 255, 255, 0.8);
     transform: scale(1.1);
   }
-  
+
   .indicator-active {
-    background: #103035;
+    /* Q2 resolved: #103035 Verde Tierra → bg-secondary */
+    background: var(--color-bg-secondary);
     box-shadow: 0 0 0 2px rgba(16, 48, 53, 0.3);
   }
-  
+
   /* Animación de fade */
   @keyframes fadeIn {
     from {
@@ -125,7 +129,7 @@
       transform: translateY(0);
     }
   }
-  
+
   /* Responsive */
   @media (max-width: 1100px) {
     .community-section {
@@ -133,27 +137,27 @@
       align-items: stretch;
       padding: 2rem 2vw;
     }
-    
+
     .community-gallery {
       width: 100%;
       height: 300px;
       margin-top: 2rem;
     }
   }
-  
+
   @media (max-width: 700px) {
     .community-title {
       font-size: 2rem;
     }
-    
+
     .community-gallery {
       height: 250px;
     }
-    
+
     .slide-container {
       gap: 0.5rem;
     }
-    
+
     .indicator {
       width: 10px;
       height: 10px;
