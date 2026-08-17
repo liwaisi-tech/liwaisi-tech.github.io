@@ -78,6 +78,15 @@
   font-size: 0.98rem;
   margin-bottom: 1.2rem;
 }
+.footer-legal-link {
+  color: var(--color-action-primary);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+.footer-legal-link:hover {
+  color: var(--color-footer-text);
+}
 .footer-divider {
   border: none;
   border-top: 1.5px solid var(--color-border-subtle);

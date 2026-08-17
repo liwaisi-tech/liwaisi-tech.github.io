@@ -1,133 +1,61 @@
+# LIWAISI TECH Landing Page
 
 ## ¿Qué hace este proyecto?
 
-Este proyecto es una **landing page** desarrollada con **React**, **TypeScript** y **Vite**. Su objetivo es presentar la propuesta tecnológica de Liwaisi, enfocada en el sector agrícola, con una interfaz moderna, adaptable y multilingüe (español e inglés).
+Este proyecto es la **landing page** institucional y comercial de **Liwaisi Tech**, desarrollada con **React**, **TypeScript** y **Vite**. Su objetivo es presentar la propuesta tecnológica de Liwaisi, orientada al sector rural y al comercio local, con una interfaz moderna, de bajo impacto ambiental (eco-diseño) y multilingüe (español e inglés).
 
 ### Estructura y funcionamiento
 
-- **Internacionalización**: La app detecta el idioma del navegador (español o inglés) y permite cambiarlo manualmente desde la barra de navegación.
+- **Internacionalización**: Detección automática del idioma del navegador (español o inglés) con selector manual en la barra de navegación.
 - **Componentes principales**:
-  - **Navbar**: Barra de navegación superior con selector de idioma.
-  - **Hero**: Sección principal con imagen de fondo y mensaje destacado.
-  - **CommunitySection**: Presenta la comunidad y muestra imágenes relacionadas.
-  - **PartnersSection**: Muestra los partners de la organización.
-  - **Footer**: Pie de página con enlaces de contacto y redes sociales.
-- **Gestión de imágenes**: Las imágenes se gestionan desde un archivo de configuración centralizado (`src/config/images.ts`).
-- **Estilos**: El diseño es responsive y utiliza CSS modularizado en `App.css` e `index.css`.
+  - **Navbar**: Barra de navegación superior con logotipo institucional y selector de idioma.
+  - **Hero**: Sección principal con mensaje destacado y llamados a la acción.
+  - **AboutSection**: Presentación de la misión, visión y metodologías de impacto.
+  - **CommunitySection**: Comunidad e iniciativas de aprendizaje digital.
+  - **ImpactSection**: Huella de proyectos tecnológicos y talleres en campo.
+  - **PartnersSection**: Aliados y colaboradores estratégicos.
+  - **Footer**: Pie de página con enlaces institucionales, contacto y enlace a las políticas de privacidad.
+  - **Soki AI - Privacidad (`/soki/privacidad/`)**: Página estática de términos y tratamiento de datos personales para Soki AI servida directamente con mínimo impacto de CO₂.
+- **Gestión de imágenes**: Configuración centralizada en `src/config/images.ts`.
+- **Identidad visual**: Basada en el *Manual de Identidad de Marca V3.3* con paleta oficial (Verde Abismo, Verde Tierra, Verde Clorofila, Gris Técnico, Blanco Nube).
 
 ### Tecnologías utilizadas
 
+- **Bun** (Gestor de paquetes y runtime)
 - **React 19** y **ReactDOM**
 - **TypeScript**
-- **Vite** (para desarrollo y build)
-- **ESLint** (con reglas recomendadas y soporte para React)
+- **Vite** (para desarrollo y empaquetado multi-página)
+- **ESLint** (con reglas recomendadas para React y TypeScript)
 - **Licencia GPLv3**
 
 ---
 
 ## ¿Cómo ponerlo en funcionamiento?
 
-### Desarrollo local
+### Gestor de paquetes: Bun (Recomendado)
 
 1. **Instala las dependencias**:
    ```bash
-   npm install
-   ```
-2. **Inicia el servidor de desarrollo**:
-   ```bash
-   npm run dev
-   ```
-   La aplicación estará disponible en `http://localhost:5173` (o el puerto que indique Vite).
-
-### Despliegue en GitHub Pages
-
-Para desplegar una app de Vite+React en GitHub Pages, sigue estos pasos:
-
-1. **Instala el paquete de despliegue**:
-   ```bash
-   npm install --save-dev gh-pages
+   bun install
    ```
 
-2. **Agrega la propiedad `homepage` en tu `package.json`**:
-   ```json
-   "homepage": "https://<TU_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>"
-   ```
-   Reemplaza `<TU_USUARIO>` y `<NOMBRE_DEL_REPOSITORIO>` por los valores correspondientes.
+2. **Comandos equivalentes diarios**:
+   - **Iniciar desarrollo**: `bun dev`
+   - **Compilar**: `bun run build`
+   - **Agregar paquete**: `bun add <nombre>`
+   - **Agregar dependencia de desarrollo**: `bun add -d <nombre>`
+   - **Ejecutar linter**: `bun run lint`
 
-3. **Modifica los scripts en `package.json`**:
-   ```json
-   "scripts": {
-     "predeploy": "npm run build",
-     "deploy": "gh-pages -d dist"
-   }
-   ```
-
-4. **Configura Vite para rutas relativas**  
-   En `vite.config.ts`, agrega la opción `base`:
-   ```ts
-   export default defineConfig({
-     base: '/<NOMBRE_DEL_REPOSITORIO>/',
-     plugins: [react()],
-   })
-   ```
-
-5. **Despliega la aplicación**:
-   ```bash
-   npm run deploy
-   ```
-
-6. **Accede a tu página**  
-   Ve a `https://<TU_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>` para ver tu sitio en línea.
+   La aplicación local estará disponible en `http://localhost:5173`.
 
 ---
 
-Currently, two official plugins are available:
+## Despliegue en GitHub Pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+El proyecto cuenta con integración y despliegue continuo (**CI/CD**) automatizado mediante GitHub Actions (`.github/workflows/deploy.yml`).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+Cada vez que se realiza un `push` a la rama `main`:
+1. GitHub Actions configura el entorno con **Bun**.
+2. Instala dependencias con `bun install`.
+3. Compila el sitio y sus páginas asociadas con `bun run build`.
+4. Publica automáticamente el contenido de la carpeta `dist/` en GitHub Pages (`liwaisi.tech`).
