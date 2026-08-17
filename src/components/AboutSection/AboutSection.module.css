@@ -28,7 +28,7 @@
   text-align: left;
 }
 .about-title {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-weight: 800;
   font-size: 2.2rem;
   /* text on Verde Tierra → Blanco Nube */
@@ -39,7 +39,7 @@
 .about-description {
   max-width: 700px;
   margin: 1.5rem 0 0 0;
-  font-family: 'Nunito', Arial, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-size: 1.2rem;
   /* text on Verde Tierra → Blanco Nube */
   color: var(--color-text-inverse);
@@ -47,7 +47,7 @@
 }
 
 .about-how-title {
-  font-family: 'Poppins', Arial, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-weight: 700;
   font-size: 1.8rem;
   /* secondary heading on dark → Blanco Nube */
@@ -58,7 +58,7 @@
 .about-how-description {
   max-width: 700px;
   margin: 0;
-  font-family: 'Nunito', Arial, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-size: 1.2rem;
   /* text on Verde Tierra → Blanco Nube */
   color: var(--color-text-inverse);

@@ -11,7 +11,7 @@
     text-align: left;
   }
   .impact-title {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     font-size: 2.6rem;
     font-weight: 800;
     /* Q1 resolved: title over Verde Tierra bg → Blanco Nube (manual 3.4: textos en interfaces oscuras) */

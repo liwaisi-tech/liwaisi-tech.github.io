@@ -21,8 +21,7 @@
   margin-bottom: 1.5rem;
   line-height: 1.1;
   text-align: left;
-  font-family: 'Poppins', 'Arial', sans-serif;
-  font-weight: 800;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 .hero-description {
   /* text on Verde Abismo → Blanco Nube */
@@ -31,10 +30,10 @@
   margin-bottom: 2.5rem;
   line-height: 1.5;
   text-align: left;
-  font-family: 'Nunito', 'Arial', sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 .hero-btn {
-  font-family: 'Raleway', Arial, Helvetica, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   /* Q2 resolved: legacy celeste var → action-primary (Verde Clorofila) */
   background: var(--color-action-primary);
   color: var(--color-text-primary);

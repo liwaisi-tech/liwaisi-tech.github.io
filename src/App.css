@@ -67,7 +67,7 @@ html, body {
   background: var(--color-bg-primary);
   display: flex;
   flex-direction: column;
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 
 .navbar {
@@ -502,7 +502,7 @@ html, body {
   margin-top: 0.7rem;
 }
 .icon {
-  font-family: 'FontAwesome', Arial, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
   font-style: normal;
   font-weight: normal;
   font-size: 1.4rem;
