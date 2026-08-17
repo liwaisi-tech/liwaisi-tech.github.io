@@ -28,7 +28,7 @@
   font-size: 1.2rem;
   font-weight: 500;
   transition: color 0.2s;
-  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
 }
 .navbar nav a:hover {
   color: var(--color-action-primary);

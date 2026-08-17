@@ -18,7 +18,7 @@
   }
 
   .community-title {
-    font-family: 'Poppins', Arial, sans-serif;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     font-size: 2.8rem;
     font-weight: 800;
     /* title on Verde Tierra → Blanco Nube */
@@ -36,7 +36,7 @@
   }
 
   .community-btn {
-    font-family: 'Raleway', Arial, Helvetica, sans-serif;
+    font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
     /* Q2 resolved: legacy celeste var → action-primary */
     background: var(--color-action-primary);
     color: var(--color-text-primary);
