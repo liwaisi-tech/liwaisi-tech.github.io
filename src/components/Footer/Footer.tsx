@@ -44,7 +44,10 @@ export const Footer = ({ lang }: FooterProps) => (
       </div>
     </div>
     <div className={styles['footer-legal']}>
-      {texts[lang].footer.legal}
+      <span>© 2026 Todos los derechos reservados | </span>
+      <a href="/soki/privacidad/" className={styles['footer-legal-link']}>
+        {lang === 'es' ? 'Políticas de Privacidad (Soki AI)' : 'Privacy Policy (Soki AI)'}
+      </a>
     </div>
     <hr className={styles['footer-divider']} />
     <div className={styles['footer-claim']}>
