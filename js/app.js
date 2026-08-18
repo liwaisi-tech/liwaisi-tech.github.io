@@ -3,9 +3,28 @@
  * Cero dependencias externas. Control de tema, menú móvil, modal de casos y envío a EmailJS.
  */
 
-// Fuente única de verdad centralizada (sincronizada con src/assets/texts.ts)
+// Fuente única de verdad centralizada (sincronizada con assets/texts.ts)
 var textsData = {
   es: {
+    seo: {
+      title: 'Liwaisi Tech | Tecnología Práctica para el Comercio Rural · Soki AI',
+      description: 'Empodera tu negocio rural con Soki by Liwaisi, el asistente comercial automático en WhatsApp para control de caja, registro de ventas y cuentas fiadas en Casanare.',
+      keywords: 'Liwaisi Tech, Soki AI, tecnologia rural, asistente comercial WhatsApp, registro de ventas, control de caja, Casanare, Aguazul, Mani',
+      ogTitle: 'Liwaisi Tech | Empodera tu Negocio Rural con Tecnología Práctica',
+      ogDescription: 'Conoce Soki by Liwaisi: asistente comercial automático en WhatsApp. Piloto cerrado para comerciantes rurales.'
+    },
+    a11y: {
+      brandLinkAria: 'Ir al inicio de Liwaisi Tech',
+      brandLogoAlt: 'Logo oficial de Liwaisi Tech',
+      navDesktopAria: 'Navegación principal',
+      navMobileAria: 'Menú móvil',
+      menuToggleOpenAria: 'Abrir menú de navegación',
+      modalCloseAria: 'Cerrar ventana emergente',
+      socialFacebookAria: 'Seguir a Liwaisi en Facebook',
+      socialGithubAria: 'Ver repositorios de Liwaisi en GitHub',
+      socialInstagramAria: 'Seguir a Liwaisi en Instagram',
+      socialLinkedinAria: 'Conectar con Liwaisi en LinkedIn'
+    },
     navbar: {
       brand: 'LIWAISI TECH',
       home: 'Inicio',
@@ -43,25 +62,25 @@ var textsData = {
           ]
         },
         case2: {
-          title: 'Cafetería en Aguazul',
+          title: 'Bootcamp Huertics',
           image: '/assets/images/cafe-aguazul.webp',
-          alt: 'Cafetería y comercio local en Aguazul Casanare',
-          description: 'Comercio local en Aguazul que redujo los descuadres de caja y mejoró el control sobre sus productos de mayor venta.',
+          alt: 'Bootcamp Huertics Cali Colombia',
+          description: 'Bootcamp ejecutado en la institucion Nuevo Latir en Disrito de Aguablanca Cali Colombia.',
           points: [
-            'Categorización automática de ingresos y compras de inventario.',
-            'Visibilidad clara de los márgenes de ganancia directamente en el chat.',
-            'Operación comercial sencilla y accesible para todo el equipo.'
+            'Bootcamp ejecutado en asociacion con empresa Rincon Verde, OMLATAM y LIWAISI.',
+            'Este Programa se ejecuto durante 1 semana entregando conocimiento en tecnología, habilidades de liderazgo e innovación aplicable y resiliente',
+            'Ademas de la instalación de uns sistema de monitoreo automatizado para la huerta del colegio bajo el cuidado de los estudiantes del programa LectuHuerta.'
           ]
         },
         case3: {
-          title: 'Workshop Bootcamp en Maní (Casanare)',
+          title: 'Talleres y charlas en colegios de Maní (Casanare)',
           image: '/assets/images/bootcamp-huertics.webp',
           alt: 'Sesión de formación técnica y Bootcamp Huertics en Maní',
-          description: 'Llevamos 1 año con nuestros talleres, mentorías y bootcamp brindando apoyo y/o co-creando con jóvenes y comunidades.',
+          description: 'Llevamos 2 año con nuestros talleres y mentorías brindando apoyo y/o co-creando con jóvenes y comunidades.',
           points: [
-            'Hemos llegado a 2 instituciones educativas rurales con charlas y talleres sobre uso de la IA.',
-            'Impactamos a más de 200 estudiantes con talleres y bootcamp en el uso tecnologías, habilidades de liderazgo e innovación aplicable y resiliente. Tanto en zonas urbanas como rurales.',
-            'Brindamos apoyo constante a 3 emprendimientos y 5 emprendedores, a través de más de 100 horas de mentorías personalizadas para que adapten y usen herramientas tecnológicas que potencian sus ideas de negocio.'
+            'Hemos llegado a 3 instituciones educativas rurales con charlas y talleres sobre uso de la IA.',
+            'Impactamos a más de 300 estudiantes con talleres y bootcamp en el uso tecnologías, habilidades de liderazgo e innovación aplicable y resilientes en zonas rurales de Mani Casanare.',
+            'Brindamos apoyo constante a 3 emprendimientos, a través de más de 100 horas de mentorías personalizadas para que adapten y usen herramientas tecnológicas que potencian sus modelos de negocio.'
           ]
         }
       }
@@ -80,7 +99,12 @@ var textsData = {
       whatsappLabel: 'Número de WhatsApp *',
       whatsappPlaceholder: 'Ej. 314 227 3180',
       submitButton: 'SOLICITAR ACCESO ANTICIPADO',
-      feedbackSuccess: '¡Gracias por postularte! Tu solicitud fue enviada exitosamente a nuestro equipo y te contactaremos por correo electrónico.'
+      submittingButton: 'ENVIANDO SOLICITUD...',
+      requiredValidation: 'Por favor completa todos los campos requeridos.',
+      feedbackSuccessTitle: '¡Postulación enviada con éxito!',
+      feedbackSuccessDesc: 'Hemos recibido los datos de tu negocio. Evaluaremos los requisitos técnicos y te contactaremos a tu correo electrónico.',
+      feedbackErrorTitle: 'No se pudo enviar la postulación',
+      feedbackErrorDesc: 'Ocurrió un error al procesar el envío. Por favor escríbenos directamente a liwaisitech@gmail.com'
     },
     footer: {
       companyName: 'LIWAISI TECNOLOGIA RURAL SOSTENIBLE S.A.S.',
@@ -88,6 +112,11 @@ var textsData = {
       address: 'Dirección: Vereda el Guineo, Finca Los Guarataros. Aguazul Casanare',
       privacyLink: 'Política de Privacidad Soki AI',
       termsLink: 'Términos de Servicio Soki AI',
+      follow: 'Sigue a Liwaisi',
+      contact: 'Contacto',
+      email: 'liwaisitech@gmail.com',
+      legal: '© 2026 Todos los derechos reservados | Políticas de Privacidad.',
+      claim: 'Liwaisi Innova, Conecta y Transforma.',
       copyright: '© 2026 Liwaisi Tecnología Rural Sostenible S.A.S. Todos los derechos reservados.'
     }
   }
@@ -126,6 +155,14 @@ function renderAllDynamicTexts(lang) {
       el.setAttribute('alt', val);
     }
   });
+
+  document.querySelectorAll('[data-aria-label]').forEach(function (el) {
+    var key = el.getAttribute('data-aria-label');
+    var val = getNestedValue(t, key);
+    if (val !== undefined) {
+      el.setAttribute('aria-label', val);
+    }
+  });
 }
 
 function initApp() {
@@ -154,10 +191,10 @@ function initApp() {
 
     if (theme === 'light') {
       if (themeIcon) themeIcon.textContent = '🌙';
-      if (themeLabel) themeLabel.textContent = 'Modo Oscuro';
+      if (themeLabel) themeLabel.textContent = textsData.es.navbar.themeDark;
     } else {
       if (themeIcon) themeIcon.textContent = '☀️';
-      if (themeLabel) themeLabel.textContent = 'Modo Claro';
+      if (themeLabel) themeLabel.textContent = textsData.es.navbar.themeLight;
     }
   }
 
@@ -274,13 +311,14 @@ function initApp() {
       var whatsapp = document.getElementById('whatsappInput') ? document.getElementById('whatsappInput').value.trim() : '';
 
       if (!nombre || !email || !tipoNegocio || !municipio || !whatsapp) {
-        alert('Por favor completa todos los campos requeridos.');
+        alert(textsData.es.capture.requiredValidation);
         return;
       }
 
       if (submitBtn) {
         submitBtn.disabled = true;
-        submitBtn.querySelector('span').textContent = 'ENVIANDO SOLICITUD...';
+        var btnText = submitBtn.querySelector('span');
+        if (btnText) btnText.textContent = textsData.es.capture.submittingButton;
       }
 
       var emailData = {
@@ -294,7 +332,7 @@ function initApp() {
           company: tipoNegocio,
           area: municipio,
           phone: whatsapp,
-          to_email: 'liwaisitech@gmail.com',
+          to_email: textsData.es.footer.email,
           comment: 'Postulación recibida desde la Landing Page para el Piloto Cerrado de Soki by Liwaisi en Casanare.'
         }
       };
@@ -311,10 +349,10 @@ function initApp() {
           if (formFeedback) {
             formFeedback.textContent = '';
             var strong = document.createElement('strong');
-            strong.textContent = '¡Postulación enviada con éxito!';
+            strong.textContent = textsData.es.capture.feedbackSuccessTitle;
             formFeedback.appendChild(strong);
             formFeedback.appendChild(document.createElement('br'));
-            formFeedback.appendChild(document.createTextNode('Hemos recibido los datos de tu negocio. Evaluaremos los requisitos técnicos y te contactaremos a tu correo electrónico (' + email + ').'));
+            formFeedback.appendChild(document.createTextNode(textsData.es.capture.feedbackSuccessDesc + ' (' + email + ').'));
             formFeedback.style.backgroundColor = 'rgba(46, 204, 113, 0.15)';
             formFeedback.style.borderColor = 'var(--color-action)';
             formFeedback.classList.add('active');
@@ -329,10 +367,10 @@ function initApp() {
         if (formFeedback) {
           formFeedback.textContent = '';
           var strongErr = document.createElement('strong');
-          strongErr.textContent = 'No se pudo enviar la postulación';
+          strongErr.textContent = textsData.es.capture.feedbackErrorTitle;
           formFeedback.appendChild(strongErr);
           formFeedback.appendChild(document.createElement('br'));
-          formFeedback.appendChild(document.createTextNode('Ocurrió un error al procesar el envío. Por favor escríbenos directamente a liwaisitech@gmail.com'));
+          formFeedback.appendChild(document.createTextNode(textsData.es.capture.feedbackErrorDesc));
           formFeedback.style.backgroundColor = 'rgba(231, 76, 60, 0.15)';
           formFeedback.style.borderColor = '#e74c3c';
           formFeedback.classList.add('active');
@@ -341,7 +379,8 @@ function initApp() {
       .finally(function () {
         if (submitBtn) {
           submitBtn.disabled = false;
-          submitBtn.querySelector('span').textContent = 'SOLICITAR ACCESO ANTICIPADO';
+          var btnText = submitBtn.querySelector('span');
+          if (btnText) btnText.textContent = textsData.es.capture.submitButton;
         }
       });
     });
@@ -353,3 +392,4 @@ if (document.readyState === 'loading') {
 } else {
   initApp();
 }
+

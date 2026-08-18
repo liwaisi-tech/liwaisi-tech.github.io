@@ -1,4 +1,4 @@
-import { texts } from '../../assets/texts';
+import { texts } from '../../../assets/texts';
 import styles from './Footer.module.css';
 
 interface FooterProps {
