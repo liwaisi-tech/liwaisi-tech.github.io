@@ -78,21 +78,39 @@
 
   <main>
     <!-- =======================================================================
-         2. HERO SECTION (Validación de Producto para Meta)
+         2. HERO SECTION (Validación de Producto con Imagen Responsiva)
          ======================================================================= -->
     <section id="hero" class="hero-section" aria-labelledby="heroTitle">
       <div class="container">
-        <div class="hero-content">
-          <!-- Título Principal (H1) -->
-          <h1 id="heroTitle" class="hero-title" data-text="hero.title"></h1>
-          
-          <!-- Subtítulo (H2) -->
-          <h2 id="heroSubtitle" class="hero-subtitle" data-text="hero.subtitle"></h2>
-          
-          <!-- Call to Action (Botón) -->
-          <a href="#postula" class="hero-cta-btn" id="heroCtaBtn">
-            <span data-text="hero.cta"></span>
-          </a>
+        <div class="hero-grid">
+          <!-- Columna Izquierda: Texto y Llamado a la Acción -->
+          <div class="hero-content">
+            <h1 id="heroTitle" class="hero-title" data-text="hero.title"></h1>
+            <p id="heroSubtitle" class="hero-subtitle" data-text="hero.subtitle"></p>
+            <div class="hero-cta-wrapper">
+              <a href="#postula" class="hero-cta-btn" id="heroCtaBtn">
+                <span data-text="hero.cta"></span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Columna Derecha: Imagen Responsiva UX/UI Optimizada con Picture -->
+          <div class="hero-media">
+            <div class="hero-image-wrapper">
+              <picture>
+                <source srcset="/assets/images/hero-desktop.webp" media="(min-width: 900px)" type="image/webp">
+                <source srcset="/assets/images/hero-mobile.webp" type="image/webp">
+                <img src="/assets/images/hero-desktop.webp"
+                  data-alt="a11y.heroImageAlt"
+                  alt="Soki by Liwaisi - Asistente comercial con inteligencia artificial en WhatsApp"
+                  class="hero-img"
+                  width="560"
+                  height="420"
+                  fetchpriority="high"
+                  loading="eager">
+              </picture>
+            </div>
+          </div>
         </div>
       </div>
     </section>

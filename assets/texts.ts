@@ -17,6 +17,7 @@ export const texts = {
       socialGithubAria: 'Ver repositorios de Liwaisi en GitHub',
       socialInstagramAria: 'Seguir a Liwaisi en Instagram',
       socialLinkedinAria: 'Conectar con Liwaisi en LinkedIn',
+      heroImageAlt: 'Soki by Liwaisi - Asistente comercial con inteligencia artificial en WhatsApp',
     },
     navbar: {
       brand: 'LIWAISI TECH',
@@ -31,6 +32,8 @@ export const texts = {
       title: 'Empodera tu Negocio con Tecnología Práctica.',
       subtitle: 'Conoce "Soki AI by Liwaisi", tu asistente comercial automático en WhatsApp. (Actualmente en fase de piloto cerrado para comerciantes de Casanare).',
       cta: 'POSTULA TU NEGOCIO AL PILOTO.',
+      imageDesktop: '/assets/images/hero-desktop.webp',
+      imageMobile: '/assets/images/hero-mobile.webp',
     },
     features: {
       title: 'Tecnología que Impulsa tu Comercio.',
@@ -132,6 +135,7 @@ export const texts = {
       socialGithubAria: 'View Liwaisi repositories on GitHub',
       socialInstagramAria: 'Follow Liwaisi on Instagram',
       socialLinkedinAria: 'Connect with Liwaisi on LinkedIn',
+      heroImageAlt: 'Soki by Liwaisi - AI Commercial Assistant on WhatsApp',
     },
     navbar: {
       brand: 'LIWAISI TECH',
@@ -146,6 +150,8 @@ export const texts = {
       title: 'Empower your Rural Business with Practical Technology.',
       subtitle: 'Meet "Soki by Liwaisi", your automated commercial assistant on WhatsApp. (Currently in closed pilot for merchants in Casanare).',
       cta: 'APPLY YOUR BUSINESS TO THE PILOT.',
+      imageDesktop: '/assets/images/hero-desktop.webp',
+      imageMobile: '/assets/images/hero-mobile.webp',
     },
     features: {
       title: 'Technology that Powers your Business.',

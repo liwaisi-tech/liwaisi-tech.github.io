@@ -23,7 +23,8 @@ var textsData = {
       socialFacebookAria: 'Seguir a Liwaisi en Facebook',
       socialGithubAria: 'Ver repositorios de Liwaisi en GitHub',
       socialInstagramAria: 'Seguir a Liwaisi en Instagram',
-      socialLinkedinAria: 'Conectar con Liwaisi en LinkedIn'
+      socialLinkedinAria: 'Conectar con Liwaisi en LinkedIn',
+      heroImageAlt: 'Soki by Liwaisi - Asistente comercial con inteligencia artificial en WhatsApp'
     },
     navbar: {
       brand: 'LIWAISI TECH',
@@ -35,9 +36,11 @@ var textsData = {
       themeDark: 'Modo Oscuro'
     },
     hero: {
-      title: 'Empodera tu Negocio Rural con Tecnología Práctica.',
-      subtitle: 'Conoce "Soki by Liwaisi", tu asistente comercial automático en WhatsApp. (Actualmente en fase de piloto cerrado para comerciantes de Casanare).',
-      cta: 'POSTULA TU NEGOCIO AL PILOTO.'
+      title: 'Empodera tu Negocio con Tecnología Práctica.',
+      subtitle: 'Conoce "Soki AI by Liwaisi", tu asistente comercial automático en WhatsApp. (Actualmente en fase de piloto cerrado para comerciantes de Casanare).',
+      cta: 'POSTULA TU NEGOCIO AL PILOTO.',
+      imageDesktop: '/assets/images/hero-desktop.webp',
+      imageMobile: '/assets/images/hero-mobile.webp'
     },
     features: {
       title: 'Tecnología que Impulsa tu Comercio.',
