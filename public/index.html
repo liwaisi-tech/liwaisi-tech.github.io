@@ -34,18 +34,18 @@
        ======================================================================= -->
   <header class="site-header">
     <div class="container header-inner">
-      <!-- Logo: Liwaisi Tech (Delta Sikuani + Texto) -->
+      <!-- Logo: Liwaisi Tech (Delta Sikuani + Texto Dinámico) -->
       <a href="#hero" class="brand-link" aria-label="Ir al inicio de Liwaisi Tech">
         <img src="/favicon.png" alt="Liwaisi Logo" class="brand-logo-icon" width="24" height="24">
-        <span class="brand-name">LIWAISI TECH</span>
+        <span class="brand-name" data-text="navbar.brand"></span>
       </a>
 
       <!-- Enlaces de Navegación de Escritorio -->
       <nav class="nav-desktop" aria-label="Navegación principal">
-        <a href="#hero" class="nav-link">Inicio</a>
-        <a href="#caracteristicas" class="nav-link">Producto (Soki)</a>
-        <a href="#impacto" class="nav-link">Impacto</a>
-        <a href="#postula" class="nav-link">Únete al Piloto</a>
+        <a href="#hero" class="nav-link" data-text="navbar.home"></a>
+        <a href="#caracteristicas" class="nav-link" data-text="navbar.product"></a>
+        <a href="#impacto" class="nav-link" data-text="navbar.impact"></a>
+        <a href="#postula" class="nav-link" data-text="navbar.pilot"></a>
       </nav>
 
       <!-- Acciones de Cabecera: Toggle Modo Claro/Oscuro & Botón Hamburguesa -->
@@ -53,7 +53,7 @@
         <!-- Toggle Modo Claro / Oscuro -->
         <button id="themeToggleBtn" class="theme-toggle" type="button">
           <span id="themeIcon">☀️</span>
-          <span id="themeLabel">Modo Claro</span>
+          <span id="themeLabel" data-text="navbar.themeLight"></span>
         </button>
 
         <!-- Botón Menú Hamburguesa Móvil -->
@@ -69,10 +69,10 @@
 
     <!-- Menú Desplegable Móvil -->
     <nav id="mobileNavMenu" class="mobile-nav-menu" aria-label="Menú móvil">
-      <a href="#hero" class="nav-link">Inicio</a>
-      <a href="#caracteristicas" class="nav-link">Producto (Soki)</a>
-      <a href="#impacto" class="nav-link">Impacto</a>
-      <a href="#postula" class="nav-link">Únete al Piloto</a>
+      <a href="#hero" class="nav-link" data-text="navbar.home"></a>
+      <a href="#caracteristicas" class="nav-link" data-text="navbar.product"></a>
+      <a href="#impacto" class="nav-link" data-text="navbar.impact"></a>
+      <a href="#postula" class="nav-link" data-text="navbar.pilot"></a>
     </nav>
   </header>
 
@@ -84,14 +84,14 @@
       <div class="container">
         <div class="hero-content">
           <!-- Título Principal (H1) -->
-          <h1 id="heroTitle" class="hero-title">Empodera tu Negocio Rural con Tecnología Práctica.</h1>
+          <h1 id="heroTitle" class="hero-title" data-text="hero.title"></h1>
           
           <!-- Subtítulo (H2) -->
-          <h2 id="heroSubtitle" class="hero-subtitle">Conoce &ldquo;Soki by Liwaisi&rdquo;, tu asistente comercial automático en WhatsApp. (Actualmente en fase de piloto cerrado para comerciantes de Casanare).</h2>
+          <h2 id="heroSubtitle" class="hero-subtitle" data-text="hero.subtitle"></h2>
           
           <!-- Call to Action (Botón) -->
           <a href="#postula" class="hero-cta-btn" id="heroCtaBtn">
-            <span>POSTULA TU NEGOCIO AL PILOTO.</span>
+            <span data-text="hero.cta"></span>
           </a>
         </div>
       </div>
@@ -107,7 +107,7 @@
         <section id="caracteristicas" class="features-section" aria-labelledby="featuresTitle">
           <header class="section-header">
             <!-- Título (H2) -->
-            <h2 id="featuresTitle" class="section-title">Tecnología que Impulsa tu Comercio.</h2>
+            <h2 id="featuresTitle" class="section-title" data-text="features.title"></h2>
           </header>
 
           <!-- Layout CSS Grid 2x2 / 4x1 con SVGs Inline Dinámicos -->
@@ -122,7 +122,7 @@
                   <path d="M24 30L23 35L28 34" fill="currentColor"/>
                 </svg>
               </div>
-              <h3 class="feature-card-title">Registro de Ventas y Fiados.</h3>
+              <h3 class="feature-card-title" data-text="features.card1"></h3>
             </article>
 
             <!-- Tarjeta 2: Control de Caja Diario -->
@@ -140,7 +140,7 @@
                   <rect x="12" y="35" width="24" height="3" rx="1" fill="var(--color-action)" stroke="currentColor" stroke-width="1.5"/>
                 </svg>
               </div>
-              <h3 class="feature-card-title">Control de Caja Diario.</h3>
+              <h3 class="feature-card-title" data-text="features.card2"></h3>
             </article>
 
             <!-- Tarjeta 3: Análisis de Rentabilidad -->
@@ -152,7 +152,7 @@
                   <text x="32" y="15" font-family="monospace" font-size="7" font-weight="900" fill="#0D1B1E">%</text>
                 </svg>
               </div>
-              <h3 class="feature-card-title">Análisis de Rentabilidad.</h3>
+              <h3 class="feature-card-title" data-text="features.card3"></h3>
             </article>
 
             <!-- Tarjeta 4: Interacción nativa en WhatsApp -->
@@ -167,7 +167,7 @@
                   <circle cx="24" cy="15.5" r="1" fill="#F4D03F"/>
                 </svg>
               </div>
-              <h3 class="feature-card-title">Interacción nativa en WhatsApp.</h3>
+              <h3 class="feature-card-title" data-text="features.card4"></h3>
             </article>
           </div>
         </section>
@@ -178,7 +178,7 @@
         <section id="impacto" class="impact-section" aria-labelledby="impactTitle">
           <header class="section-header">
             <!-- Título (H2) -->
-            <h2 id="impactTitle" class="section-title">Impacto en el Territorio</h2>
+            <h2 id="impactTitle" class="section-title" data-text="impact.title"></h2>
           </header>
 
           <!-- Grid con 3 Casos de Uso con formato <picture> y loading="lazy" -->
@@ -190,13 +190,13 @@
                   <source srcset="/assets/images/cafeteria-la-casaba-desktop.webp" media="(min-width: 600px)" type="image/webp">
                   <source srcset="/assets/images/cafeteria-la-casaba-mobile.webp" type="image/webp">
                   <img src="/assets/images/cafeteria-la-casaba-desktop.webp"
-                    alt="Cafetería La Casaba en Casanare utilizando Soki AI" width="400" height="250"
+                    data-alt="impact.cases.case1.alt" alt="Cafetería La Casaba" width="400" height="250"
                     loading="lazy">
                 </picture>
               </div>
               <div class="impact-card-body">
-                <h3 class="impact-card-title">Cafetería La Casaba (Casanare)</h3>
-                <button type="button" class="btn-case-study" data-case="case1" aria-haspopup="dialog">Ver Caso de Éxito</button>
+                <h3 class="impact-card-title" data-text="impact.cases.case1.title"></h3>
+                <button type="button" class="btn-case-study" data-case="case1" data-text="impact.btnCaseStudy" aria-haspopup="dialog"></button>
               </div>
             </article>
 
@@ -206,13 +206,13 @@
                 <picture>
                   <source srcset="/assets/images/cafe-aguazul.webp" media="(min-width: 600px)" type="image/webp">
                   <source srcset="/assets/images/cafe-aguazul-mobile.webp" type="image/webp">
-                  <img src="/assets/images/cafe-aguazul.webp" alt="Cafetería y comercio local en Aguazul Casanare"
+                  <img src="/assets/images/cafe-aguazul.webp" data-alt="impact.cases.case2.alt" alt="Cafetería en Aguazul"
                     width="400" height="250" loading="lazy">
                 </picture>
               </div>
               <div class="impact-card-body">
-                <h3 class="impact-card-title">Cafetería en Aguazul</h3>
-                <button type="button" class="btn-case-study" data-case="case2" aria-haspopup="dialog">Ver Caso de Éxito</button>
+                <h3 class="impact-card-title" data-text="impact.cases.case2.title"></h3>
+                <button type="button" class="btn-case-study" data-case="case2" data-text="impact.btnCaseStudy" aria-haspopup="dialog"></button>
               </div>
             </article>
 
@@ -223,13 +223,13 @@
                   <source srcset="/assets/images/bootcamp-huertics.webp" media="(min-width: 600px)" type="image/webp">
                   <source srcset="/assets/images/bootcamp-huertics-mobile.webp" type="image/webp">
                   <img src="/assets/images/bootcamp-huertics.webp"
-                    alt="Sesión de formación técnica y Bootcamp Huertics en Maní" width="400" height="250"
+                    data-alt="impact.cases.case3.alt" alt="Bootcamp Huertics en Maní" width="400" height="250"
                     loading="lazy">
                 </picture>
               </div>
               <div class="impact-card-body">
-                <h3 class="impact-card-title">Workshop Bootcamp en Maní (Casanare)</h3>
-                <button type="button" class="btn-case-study" data-case="case3" aria-haspopup="dialog">Ver Caso de Éxito</button>
+                <h3 class="impact-card-title" data-text="impact.cases.case3.title"></h3>
+                <button type="button" class="btn-case-study" data-case="case3" data-text="impact.btnCaseStudy" aria-haspopup="dialog"></button>
               </div>
             </article>
           </div>
@@ -242,47 +242,46 @@
           <div class="capture-box">
             <header class="capture-header">
               <!-- Título (H2) -->
-              <h2 id="captureTitle" class="capture-title">Postula tu negocio al Piloto de Soki.</h2>
+              <h2 id="captureTitle" class="capture-title" data-text="capture.title"></h2>
               <!-- Texto Explicativo -->
-              <p class="capture-description">Los cupos son limitados. Déjanos tus datos y evaluaremos si tu negocio
-                cumple con los requisitos técnicos para esta fase.</p>
+              <p class="capture-description" data-text="capture.description"></p>
             </header>
 
             <!-- Formulario de HTML Nativo Accesible -->
             <form id="sokiPilotForm" class="native-form" method="POST" action="#">
               <div class="form-group">
-                <label for="nombreInput" class="form-label">Nombre Completo *</label>
-                <input type="text" id="nombreInput" name="nombre" class="form-input" placeholder="Ej. Carlos Mendoza"
+                <label for="nombreInput" class="form-label" data-text="capture.nameLabel"></label>
+                <input type="text" id="nombreInput" name="nombre" class="form-input" data-placeholder="capture.namePlaceholder"
                   required autocomplete="name">
               </div>
 
               <div class="form-group">
-                <label for="emailInput" class="form-label">Correo Electrónico *</label>
-                <input type="email" id="emailInput" name="email" class="form-input" placeholder="Ej. carlos.mendoza@gmail.com"
+                <label for="emailInput" class="form-label" data-text="capture.emailLabel"></label>
+                <input type="email" id="emailInput" name="email" class="form-input" data-placeholder="capture.emailPlaceholder"
                   required autocomplete="email">
               </div>
 
               <div class="form-group">
-                <label for="tipoNegocioInput" class="form-label">Tipo de Negocio *</label>
+                <label for="tipoNegocioInput" class="form-label" data-text="capture.businessTypeLabel"></label>
                 <input type="text" id="tipoNegocioInput" name="tipo_negocio" class="form-input"
-                  placeholder="Ej. Tienda de Abarrotes, Ferretería, Cafetería" required>
+                  data-placeholder="capture.businessTypePlaceholder" required>
               </div>
 
               <div class="form-group">
-                <label for="municipioInput" class="form-label">Municipio *</label>
+                <label for="municipioInput" class="form-label" data-text="capture.municipalityLabel"></label>
                 <input type="text" id="municipioInput" name="municipio" class="form-input"
-                  placeholder="Ej. Maní, Aguazul, Yopal" required>
+                  data-placeholder="capture.municipalityPlaceholder" required>
               </div>
 
               <div class="form-group">
-                <label for="whatsappInput" class="form-label">Número de WhatsApp *</label>
-                <input type="tel" id="whatsappInput" name="whatsapp" class="form-input" placeholder="Ej. 314 227 3180"
+                <label for="whatsappInput" class="form-label" data-text="capture.whatsappLabel"></label>
+                <input type="tel" id="whatsappInput" name="whatsapp" class="form-input" data-placeholder="capture.whatsappPlaceholder"
                   required pattern="[0-9+ ]{7,15}" autocomplete="tel">
               </div>
 
               <!-- Botón Submit -->
               <button type="submit" id="submitBtn" class="submit-btn">
-                <span>SOLICITAR ACCESO ANTICIPADO</span>
+                <span data-text="capture.submitButton"></span>
               </button>
 
               <!-- Feedback del Envío -->
@@ -304,23 +303,22 @@
       <div class="footer-grid">
         <!-- Columna 1: Datos Legales Oficiales -->
         <div class="footer-col-legal">
-          <p class="footer-company-name">LIWAISI TECNOLOGIA RURAL SOSTENIBLE S.A.S.</p>
-          <p class="footer-nit">NIT: 902076671</p>
-          <p class="footer-address">Dirección: Vereda el Guineo, Finca Los Guarataros. Aguazul Casanare</p>
+          <p class="footer-company-name" data-text="footer.companyName"></p>
+          <p class="footer-nit" data-text="footer.nit"></p>
+          <p class="footer-address" data-text="footer.address"></p>
         </div>
 
         <!-- Columna 2: Enlaces Legales -->
         <div class="footer-col-links">
-          <a href="/soki/privacidad" class="footer-privacy-link">Política de Privacidad Soki AI</a>
-          <a href="/soki/terminos" class="footer-privacy-link">Términos de Servicio Soki AI</a>
+          <a href="/soki/privacidad" class="footer-privacy-link" data-text="footer.privacyLink"></a>
+          <a href="/soki/terminos" class="footer-privacy-link" data-text="footer.termsLink"></a>
         </div>
       </div>
 
       <div class="footer-divider" aria-hidden="true"></div>
 
       <!-- Copyright Inferior Exacto -->
-      <p class="footer-copyright">&copy; 2026 Liwaisi Tecnología Rural Sostenible S.A.S. Todos los derechos reservados.
-      </p>
+      <p class="footer-copyright" data-text="footer.copyright"></p>
     </div>
   </footer>
 
