@@ -59,7 +59,7 @@ export const texts = {
         },
         case2: {
           title: 'Bootcamp Huertics',
-          image: '/assets/images/cafe-aguazul.webp',
+          image: '/assets/images/Bootcamp-desktop.webp',
           alt: 'Bootcamp Huertics Cali Colombia',
           description: 'Bootcamp ejecutado en la institucion Nuevo Latir en el Distrito de Aguablanca Cali Colombia.',
           points: [
