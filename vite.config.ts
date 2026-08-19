@@ -9,7 +9,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: 'index.html',
-        sokiPrivacidad: 'soki/privacidad/index.html'
+        sokiPrivacidad: 'soki/privacidad/index.html',
+        sokiTerminos: 'soki/terminos/index.html'
       }
     }
   }
