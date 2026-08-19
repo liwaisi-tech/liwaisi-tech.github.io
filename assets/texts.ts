@@ -1,3 +1,12 @@
+import heroDesktop from './images/hero-desktop.webp';
+import heroMobile from './images/hero-mobile.webp';
+import cafeteriaDesktop from './images/cafeteria-la-casaba-desktop.webp';
+import cafeteriaMobile from './images/cafeteria-la-casaba-mobile.webp';
+import bootcampDesktop from './images/Bootcamp-desktop.webp';
+import bootcampMobile from './images/Bootcamp-mobile.webp';
+import bootcampHuerticsDesktop from './images/bootcamp-huertics.webp';
+import bootcampHuerticsMobile from './images/bootcamp-huertics-mobile.webp';
+
 export const texts = {
   es: {
     seo: {
@@ -32,8 +41,8 @@ export const texts = {
       title: 'Empodera tu Negocio con Tecnología Práctica.',
       subtitle: 'Soki AI by Liwaisi: La contabilidad de tu negocio a un chat de distancia. Olvida los sistemas complejos y las descargas pesadas. Registra ventas, gastos o fiados, y facilita el cierre de caja enviando un simple mensaje de WhatsApp. (Acceso exclusivo por invitación)',
       cta: 'POSTULA TU NEGOCIO AL PILOTO.',
-      imageDesktop: '/assets/images/hero-desktop.webp',
-      imageMobile: '/assets/images/hero-mobile.webp',
+      imageDesktop: heroDesktop,
+      imageMobile: heroMobile,
     },
     features: {
       title: 'Con Soki IA podrás:',
@@ -48,7 +57,9 @@ export const texts = {
       cases: {
         case1: {
           title: 'Cafetería La Casaba (Casanare)',
-          image: '/assets/images/cafeteria-la-casaba-desktop.webp',
+          image: cafeteriaDesktop,
+          imageDesktop: cafeteriaDesktop,
+          imageMobile: cafeteriaMobile,
           alt: 'Cafetería La Casaba en Casanare utilizando Soki AI',
           description: 'Negocio de café y alimentos en Casanare que implementó Soki AI para optimizar su administración diaria sin cuadernos ni pérdidas de información.',
           points: [
@@ -59,7 +70,9 @@ export const texts = {
         },
         case2: {
           title: 'Bootcamp Huertics',
-          image: '/assets/images/Bootcamp-desktop.webp',
+          image: bootcampDesktop,
+          imageDesktop: bootcampDesktop,
+          imageMobile: bootcampMobile,
           alt: 'Bootcamp Huertics Cali Colombia',
           description: 'Bootcamp ejecutado en la institucion Nuevo Latir en el Distrito de Aguablanca Cali Colombia.',
           points: [
@@ -70,7 +83,9 @@ export const texts = {
         },
         case3: {
           title: 'Talleres y charlas en colegios de Maní (Casanare)',
-          image: '/assets/images/bootcamp-huertics.webp',
+          image: bootcampHuerticsDesktop,
+          imageDesktop: bootcampHuerticsDesktop,
+          imageMobile: bootcampHuerticsMobile,
           alt: 'Sesión de formación técnica y Bootcamp Huertics en Maní',
           description: 'Llevamos 2 años con nuestros talleres y mentorías brindando apoyo y/o co-creando con jóvenes y comunidades.',
           points: [
@@ -150,8 +165,8 @@ export const texts = {
       title: 'Empower your Rural Business with Practical Technology.',
       subtitle: 'Meet "Soki by Liwaisi", your automated commercial assistant on WhatsApp. (Currently in closed pilot for merchants in Casanare).',
       cta: 'APPLY YOUR BUSINESS TO THE PILOT.',
-      imageDesktop: '/assets/images/hero-desktop.webp',
-      imageMobile: '/assets/images/hero-mobile.webp',
+      imageDesktop: heroDesktop,
+      imageMobile: heroMobile,
     },
     features: {
       title: 'Technology that Powers your Business.',
@@ -166,7 +181,9 @@ export const texts = {
       cases: {
         case1: {
           title: 'La Casaba Coffee Shop (Casanare)',
-          image: '/assets/images/cafeteria-la-casaba-desktop.webp',
+          image: cafeteriaDesktop,
+          imageDesktop: cafeteriaDesktop,
+          imageMobile: cafeteriaMobile,
           alt: 'La Casaba Coffee Shop in Casanare using Soki AI',
           description: 'Coffee and food business in Casanare that implemented Soki AI to optimize daily management without paper notebooks or lost records.',
           points: [
@@ -176,25 +193,29 @@ export const texts = {
           ],
         },
         case2: {
-          title: 'Coffee Shop in Aguazul',
-          image: '/assets/images/cafe-aguazul.webp',
-          alt: 'Local coffee shop in Aguazul Casanare',
-          description: 'Local business in Aguazul that eliminated cash discrepancies and improved tracking of best-selling products.',
+          title: 'Bootcamp Huertics',
+          image: bootcampDesktop,
+          imageDesktop: bootcampDesktop,
+          imageMobile: bootcampMobile,
+          alt: 'Bootcamp Huertics Cali Colombia',
+          description: 'Bootcamp executed at Nuevo Latir institution in Aguablanca District, Cali Colombia.',
           points: [
-            'Automatic categorization of income and inventory purchases.',
-            'Clear profit margin visibility delivered right in the chat.',
-            'Simple and accessible commercial operations for the entire team.',
+            'Bootcamp executed in partnership with Rincon Verde, OMLATAM and LIWAISI.',
+            'This program ran for 1 week delivering knowledge in technology, leadership skills, and resilient innovation.',
+            'Installation of an automated irrigation monitoring system for the school garden.',
           ],
         },
         case3: {
           title: 'Workshop Bootcamp in Maní (Casanare)',
-          image: '/assets/images/bootcamp-huertics.webp',
+          image: bootcampHuerticsDesktop,
+          imageDesktop: bootcampHuerticsDesktop,
+          imageMobile: bootcampHuerticsMobile,
           alt: 'Technical training session and Huertics Bootcamp in Maní',
-          description: 'We have been providing support and/or co-creating with young people and communities for 1 year through workshops, mentoring, and bootcamps.',
+          description: 'We have been providing support and/or co-creating with young people and communities for 2 years through workshops, mentoring, and bootcamps.',
           points: [
-            'We have reached 2 rural educational institutions with talks and workshops on the use of AI.',
-            'We impacted more than 200 students with workshops and bootcamps on the use of technologies, leadership skills, and applicable, resilient innovation. Both in urban and rural areas.',
-            'We provide constant support to 3 ventures and 5 entrepreneurs through more than 100 hours of personalized mentoring to adapt and use tech tools that empower their business ideas.',
+            'We have reached 3 rural educational institutions with talks and workshops on the use of AI.',
+            'We impacted more than 300 students with workshops and bootcamps on technology and leadership skills.',
+            'We provide constant support to 3 ventures through more than 100 hours of personalized mentoring.',
           ],
         },
       },

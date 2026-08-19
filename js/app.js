@@ -119,8 +119,10 @@ function initApp() {
 
       if (data && caseModal) {
         if (modalImage) {
-          modalImage.src = data.image;
-          modalImage.alt = data.alt;
+          var isMobile = window.innerWidth <= 768;
+          var selectedImage = (isMobile && data.imageMobile) ? data.imageMobile : (data.imageDesktop || data.image);
+          modalImage.src = selectedImage;
+          modalImage.alt = data.alt || '';
         }
         if (modalTitle) modalTitle.textContent = data.title;
         if (modalDescription) modalDescription.textContent = data.description;
