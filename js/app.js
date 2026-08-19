@@ -72,14 +72,14 @@ var textsData = {
           points: [
             'Bootcamp ejecutado en asociacion con empresa Rincon Verde, OMLATAM y LIWAISI.',
             'Este Programa se ejecuto durante 1 semana entregando conocimiento en tecnología, habilidades de liderazgo e innovación aplicable y resiliente',
-            'Ademas de la instalación de uns sistema de monitoreo automatizado para la huerta del colegio bajo el cuidado de los estudiantes del programa LectuHuerta.'
+            'Ademas de la instalación de uns sistema de monitoreo automatizado de riego para la huerta del colegio bajo el cuidado de los estudiantes del programa LectuHuerta.'
           ]
         },
         case3: {
           title: 'Talleres y charlas en colegios de Maní (Casanare)',
           image: '/assets/images/bootcamp-huertics.webp',
           alt: 'Sesión de formación técnica y Bootcamp Huertics en Maní',
-          description: 'Llevamos 2 año con nuestros talleres y mentorías brindando apoyo y/o co-creando con jóvenes y comunidades.',
+          description: 'Llevamos 2 años con nuestros talleres y mentorías brindando apoyo y/o co-creando con jóvenes y comunidades.',
           points: [
             'Hemos llegado a 3 instituciones educativas rurales con charlas y talleres sobre uso de la IA.',
             'Impactamos a más de 300 estudiantes con talleres y bootcamp en el uso tecnologías, habilidades de liderazgo e innovación aplicable y resilientes en zonas rurales de Mani Casanare.',

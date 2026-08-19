@@ -75,7 +75,7 @@ export const texts = {
           description: 'Llevamos 2 años con nuestros talleres y mentorías brindando apoyo y/o co-creando con jóvenes y comunidades.',
           points: [
             'Hemos llegado a 3 instituciones educativas rurales con charlas y talleres sobre uso de la IA.',
-            'Impactamos a más de 300 estudiantes con talleres y bootcamp en el uso tecnologías, habilidades de liderazgo e innovación aplicable y resilientes en zonas rurales de Mani Casanare.',
+            'Impactamos a más de 300 estudiantes con talleres y charlas en el uso tecnologías, habilidades de liderazgo e innovación aplicable y resilientes en zonas rurales de Mani Casanare.',
             'Brindamos apoyo constante a 3 emprendimientos, a través de más de 100 horas de mentorías personalizadas para que adapten y usen herramientas tecnológicas que potencian sus modelos de negocio.',
           ],
         },
