@@ -10,7 +10,9 @@ export default defineConfig({
       input: {
         main: 'index.html',
         sokiPrivacidad: 'soki/privacidad/index.html',
-        sokiTerminos: 'soki/terminos/index.html'
+        sokiPrivacidadHtml: 'soki/privacidad.html',
+        sokiTerminos: 'soki/terminos/index.html',
+        sokiTerminosHtml: 'soki/terminos.html'
       }
     }
   }
