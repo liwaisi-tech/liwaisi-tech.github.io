@@ -43,11 +43,11 @@ var textsData = {
       imageMobile: '/assets/images/hero-mobile.webp'
     },
     features: {
-      title: 'Tecnología que Impulsa tu Comercio.',
-      card1: 'Registro de Ventas y Fiados.',
-      card2: 'Control de Caja Diario.',
+      title: 'Con Soki IA podrás:',
+      card1: 'Registrar las Ventas y Fiados.',
+      card2: 'Hacer Control de Caja Diario.',
       card3: 'Análisis de Rentabilidad.',
-      card4: 'Interacción nativa en WhatsApp.'
+      card4: 'Hablar con SOKI por WhatsApp.'
     },
     impact: {
       title: 'Impacto en el Territorio',
