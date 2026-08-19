@@ -61,7 +61,7 @@ export const texts = {
           title: 'Bootcamp Huertics',
           image: '/assets/images/cafe-aguazul.webp',
           alt: 'Bootcamp Huertics Cali Colombia',
-          description: 'Bootcamp ejecutado en la institucion Nuevo Latir en Disrito de Aguablanca Cali Colombia.',
+          description: 'Bootcamp ejecutado en la institucion Nuevo Latir en el Distrito de Aguablanca Cali Colombia.',
           points: [
             'Bootcamp ejecutado en asociacion con empresa Rincon Verde, OMLATAM y LIWAISI.',
             'Este Programa se ejecuto durante 1 semana entregando conocimiento en tecnología, habilidades de liderazgo e innovación aplicable y resiliente',
