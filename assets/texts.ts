@@ -30,7 +30,7 @@ export const texts = {
     },
     hero: {
       title: 'Empodera tu Negocio con Tecnología Práctica.',
-      subtitle: 'Conoce "Soki AI by Liwaisi", tu asistente comercial automático en WhatsApp. (Actualmente en fase de piloto cerrado para comerciantes de Casanare).',
+      subtitle: 'Soki AI by Liwaisi: La contabilidad de tu negocio a un chat de distancia.\nOlvida los sistemas complejos y las descargas pesadas. Registra ventas, gastos y fiados y te ayuda con el cierre de caja enviando un simple mensaje de WhatsApp. (Acceso exclusivo por invitación)',
       cta: 'POSTULA TU NEGOCIO AL PILOTO.',
       imageDesktop: '/assets/images/hero-desktop.webp',
       imageMobile: '/assets/images/hero-mobile.webp',
