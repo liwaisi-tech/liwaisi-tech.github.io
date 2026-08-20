@@ -53,14 +53,14 @@ export const texts = {
     },
     impact: {
       title: 'Impacto en el Territorio',
-      btnCaseStudy: 'Ver Caso de Éxito',
+      btnCaseStudy: 'Ver Más',
       cases: {
         case1: {
-          title: 'Cafetería La Casaba (Casanare)',
+          title: 'Cafetería El Pajuil (Casanare)',
           image: cafeteriaDesktop,
           imageDesktop: cafeteriaDesktop,
           imageMobile: cafeteriaMobile,
-          alt: 'Cafetería La Casaba en Casanare utilizando Soki AI',
+          alt: 'Cafetería El Pajuil en Casanare utilizando Soki AI',
           description: 'Negocio de café y alimentos en Casanare que implementó Soki AI para optimizar su administración diaria sin cuadernos ni pérdidas de información.',
           points: [
             'Registro ágil de ventas diarias y control de cuentas fiadas en tiempo real.',
@@ -177,14 +177,14 @@ export const texts = {
     },
     impact: {
       title: 'Impact in the Territory',
-      btnCaseStudy: 'View Case Study',
+      btnCaseStudy: 'View More',
       cases: {
         case1: {
-          title: 'La Casaba Coffee Shop (Casanare)',
+          title: 'El Pajuil Coffee Shop (Casanare)',
           image: cafeteriaDesktop,
           imageDesktop: cafeteriaDesktop,
           imageMobile: cafeteriaMobile,
-          alt: 'La Casaba Coffee Shop in Casanare using Soki AI',
+          alt: 'El Pajuil Coffee Shop in Casanare using Soki AI',
           description: 'Coffee and food business in Casanare that implemented Soki AI to optimize daily management without paper notebooks or lost records.',
           points: [
             'Fast logging of daily sales and real-time customer credit tracking.',
